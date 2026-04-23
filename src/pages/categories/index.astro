@@ -1,0 +1,95 @@
+﻿---
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import Header from '../../components/Header.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../../consts';
+import { getPublishedPosts, getCategoryHref, groupPostsBy } from '../../utils/blog';
+
+const categories = groupPostsBy(await getPublishedPosts(), 'category');
+---
+
+<!doctype html>
+<html lang="zh-CN">
+	<head>
+		<BaseHead title={`分类 | ${SITE_TITLE}`} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<section class="page-title">
+				<p class="eyebrow">Categories</p>
+				<h1>分类</h1>
+				<p>按主题浏览文章，适合先逛某个方向，再逐篇深入。</p>
+			</section>
+
+			<section class="taxonomy-grid">
+				{
+					categories.map((category) => (
+						<a class="taxonomy-card" href={getCategoryHref(category.name)}>
+							<div>
+								<h2>{category.name}</h2>
+								<p>{category.posts[0]?.data.description}</p>
+							</div>
+							<span>{category.count} 篇</span>
+						</a>
+					))
+				}
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.page-title {
+		margin-bottom: 1.5rem;
+	}
+
+	.eyebrow {
+		margin-bottom: 0.8rem;
+		font-size: 0.82rem;
+		letter-spacing: 0.12em;
+		text-transform: uppercase;
+		color: rgb(var(--gray));
+	}
+
+	.taxonomy-grid {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 1rem;
+	}
+
+	.taxonomy-card {
+		display: flex;
+		justify-content: space-between;
+		gap: 1rem;
+		padding: 1.5rem;
+		border-radius: 1.5rem;
+		border: 1px solid rgba(var(--border), 0.8);
+		background: rgba(255, 253, 249, 0.84);
+		box-shadow: var(--card-shadow);
+		text-decoration: none;
+		color: inherit;
+	}
+
+	.taxonomy-card h2 {
+		margin-bottom: 0.5rem;
+	}
+
+	.taxonomy-card p {
+		margin: 0;
+		color: rgb(var(--gray));
+	}
+
+	.taxonomy-card span {
+		white-space: nowrap;
+		color: rgb(var(--accent-strong));
+		font-weight: 700;
+	}
+
+	@media (max-width: 720px) {
+		.taxonomy-grid {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>

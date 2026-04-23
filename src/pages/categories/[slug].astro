@@ -1,0 +1,135 @@
+﻿---
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import FormattedDate from '../../components/FormattedDate.astro';
+import Header from '../../components/Header.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../../consts';
+import { getPublishedPosts, getTagHref, groupPostsBy } from '../../utils/blog';
+
+export async function getStaticPaths() {
+	const categories = groupPostsBy(await getPublishedPosts(), 'category');
+	return categories.map((category) => ({
+		params: { slug: category.slug },
+		props: category,
+	}));
+}
+
+const category = Astro.props;
+const title = `${category.name} | 分类 | ${SITE_TITLE}`;
+---
+
+<!doctype html>
+<html lang="zh-CN">
+	<head>
+		<BaseHead title={title} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<section class="page-title">
+				<p class="eyebrow">Category</p>
+				<h1>{category.name}</h1>
+				<p>这个分类下目前有 {category.count} 篇文章。</p>
+			</section>
+
+			<section class="post-list">
+				{
+					category.posts.map((post) => (
+						<article class="post-item">
+							<p class="meta">
+								<span>{post.data.category}</span>
+								<FormattedDate date={post.data.pubDate} />
+							</p>
+							<h2><a href={`/blog/${post.id}/`}>{post.data.title}</a></h2>
+							<p>{post.data.description}</p>
+							{post.data.tags.length > 0 && (
+								<ul class="tags">
+									{post.data.tags.map((tag) => (
+										<li>
+											<a href={getTagHref(tag)}>{tag}</a>
+										</li>
+									))}
+								</ul>
+							)}
+						</article>
+					))
+				}
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.page-title {
+		margin-bottom: 1.5rem;
+	}
+
+	.eyebrow {
+		margin-bottom: 0.8rem;
+		font-size: 0.82rem;
+		letter-spacing: 0.12em;
+		text-transform: uppercase;
+		color: rgb(var(--gray));
+	}
+
+	.post-list {
+		display: grid;
+		gap: 1rem;
+	}
+
+	.post-item {
+		padding: 1.5rem;
+		border-radius: 1.5rem;
+		border: 1px solid rgba(var(--border), 0.8);
+		background: rgba(255, 253, 249, 0.84);
+		box-shadow: var(--card-shadow);
+	}
+
+	.post-item h2 {
+		margin-bottom: 0.6rem;
+	}
+
+	.post-item h2 a {
+		color: rgb(var(--black));
+		text-decoration: none;
+	}
+
+	.post-item h2 a:hover {
+		color: rgb(var(--accent-strong));
+	}
+
+	.meta {
+		display: flex;
+		justify-content: space-between;
+		gap: 1rem;
+		font-size: 0.88rem;
+		color: rgb(var(--gray));
+	}
+
+	.tags {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.6rem;
+		padding: 0;
+		margin: 1rem 0 0;
+		list-style: none;
+	}
+
+	.tags li a {
+		display: inline-block;
+		padding: 0.35rem 0.7rem;
+		border-radius: 999px;
+		background: rgba(var(--gray-light), 0.65);
+		font-size: 0.82rem;
+		text-decoration: none;
+		color: rgb(var(--gray-dark));
+	}
+
+	@media (max-width: 720px) {
+		.meta {
+			flex-direction: column;
+			gap: 0.4rem;
+		}
+	}
+</style>

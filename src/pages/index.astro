@@ -1,49 +1,364 @@
----
+﻿---
+import { getCollection } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
+import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
-import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import { SITE_DESCRIPTION, SITE_TAGLINE, SITE_TITLE } from '../consts';
+import { getCategoryHref, getTagHref, groupPostsBy } from '../utils/blog';
+
+const posts = (await getCollection('blog'))
+	.filter((post) => !post.data.draft)
+	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const latestPosts = posts.slice(0, 3);
+const categories = [...new Set(posts.map((post) => post.data.category))];
+const topCategories = groupPostsBy(posts, 'category').slice(0, 4);
+const topTags = groupPostsBy(posts, 'tags').slice(0, 6);
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body>
 		<Header />
 		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This template
-				serves as a lightweight, minimally-styled starting point for anyone looking to build a personal
-				website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to
-				<a href="https://docs.astro.build/">read the docs</a>
-				or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out
-				<a href="https://github.com/Charca/astro-blog-template">astro-blog-template</a>
-				by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
+			<section class="hero">
+				<div class="hero-copy">
+					<p class="eyebrow">个人博客 · Astro · 中文写作</p>
+					<h1>{SITE_TITLE}</h1>
+					<p class="tagline">{SITE_TAGLINE}</p>
+					<p class="intro">
+						这里适合写 AI、技术、工具清单、读书随笔，也适合把一篇篇零散 Markdown
+						文稿沉淀成长期可检索、可分享的个人站点。
+					</p>
+					<div class="hero-actions">
+						<a class="button primary" href="/blog">开始看文章</a>
+						<a class="button secondary" href="/about">了解站点结构</a>
+					</div>
+				</div>
+				<div class="hero-panel">
+					<div class="stat">
+						<span>文章分类</span>
+						<strong>{categories.length}</strong>
+					</div>
+					<div class="stat">
+						<span>已发布文章</span>
+						<strong>{posts.length}</strong>
+					</div>
+					<div class="stat note">
+						<p>你后续只需要继续往 <code>src/content/blog/</code> 里加 Markdown 文件，就能发布新文章。</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="section-grid">
+				<div class="section-heading">
+					<p class="eyebrow">写作方向</p>
+					<h2>给博客一个稳定的内容骨架</h2>
+				</div>
+				<div class="topics">
+					<article>
+						<h3>AI 与科技</h3>
+						<p>模型体验、工具评测、工作流尝试、趋势记录。</p>
+					</article>
+					<article>
+						<h3>开发与产品</h3>
+						<p>项目复盘、效率工具、网站搭建、独立作品迭代。</p>
+					</article>
+					<article>
+						<h3>阅读与随笔</h3>
+						<p>把零碎想法写成结构化文章，让内容积累得更久。</p>
+					</article>
+				</div>
+			</section>
+
+			<section class="section-grid">
+				<div class="section-heading row">
+					<div>
+						<p class="eyebrow">内容导航</p>
+						<h2>从分类和标签开始逛</h2>
+					</div>
+					<div class="nav-links">
+						<a href="/categories">全部分类</a>
+						<a href="/tags">全部标签</a>
+					</div>
+				</div>
+				<div class="browse-columns">
+					<article class="browse-box">
+						<h3>热门分类</h3>
+						<ul>
+							{
+								topCategories.map((category) => (
+									<li>
+										<a href={getCategoryHref(category.name)}>{category.name}</a>
+										<span>{category.count} 篇</span>
+									</li>
+								))
+							}
+						</ul>
+					</article>
+					<article class="browse-box">
+						<h3>常见标签</h3>
+						<ul class="tag-list">
+							{
+								topTags.map((tag) => (
+									<li>
+										<a href={getTagHref(tag.name)}>{tag.name}</a>
+									</li>
+								))
+							}
+						</ul>
+					</article>
+				</div>
+			</section>
+
+			<section class="latest-posts">
+				<div class="section-heading row">
+					<div>
+						<p class="eyebrow">最近发布</p>
+						<h2>先从 3 篇文章开始</h2>
+					</div>
+					<a href="/blog">查看全部文章</a>
+				</div>
+				<div class="post-grid">
+					{
+						latestPosts.map((post) => (
+							<article class="post-card">
+								<p class="meta">
+									<span>{post.data.category}</span>
+									<FormattedDate date={post.data.pubDate} />
+								</p>
+								<h3>
+									<a href={`/blog/${post.id}/`}>{post.data.title}</a>
+								</h3>
+								<p>{post.data.description}</p>
+							</article>
+						))
+					}
+				</div>
+			</section>
 		</main>
 		<Footer />
 	</body>
 </html>
+
+<style>
+	.hero {
+		display: grid;
+		grid-template-columns: 1.5fr 0.9fr;
+		gap: 1.5rem;
+		padding: 2rem;
+		border: 1px solid rgba(var(--border), 0.8);
+		border-radius: 2rem;
+		background: var(--hero);
+		box-shadow: var(--card-shadow);
+	}
+
+	.hero-copy {
+		padding-right: 1rem;
+	}
+
+	.eyebrow {
+		margin-bottom: 0.8rem;
+		font-size: 0.82rem;
+		letter-spacing: 0.12em;
+		text-transform: uppercase;
+		color: rgb(var(--gray));
+	}
+
+	.tagline {
+		font-size: clamp(1.2rem, 2vw, 1.6rem);
+		font-weight: 700;
+		color: rgb(var(--black));
+	}
+
+	.intro {
+		max-width: 38rem;
+		font-size: 1.02rem;
+	}
+
+	.hero-actions {
+		display: flex;
+		gap: 1rem;
+		flex-wrap: wrap;
+		margin-top: 1.75rem;
+	}
+
+	.button {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0.9rem 1.2rem;
+		border-radius: 999px;
+		text-decoration: none;
+		font-weight: 700;
+	}
+
+	.button.primary {
+		background: rgb(var(--accent));
+		color: rgb(var(--surface));
+	}
+
+	.button.secondary {
+		border: 1px solid rgba(var(--border), 0.9);
+		color: rgb(var(--black));
+		background: rgba(255, 255, 255, 0.55);
+	}
+
+	.hero-panel {
+		display: grid;
+		gap: 1rem;
+	}
+
+	.stat {
+		padding: 1.25rem;
+		border-radius: 1.4rem;
+		background: rgba(255, 252, 248, 0.8);
+		border: 1px solid rgba(var(--border), 0.7);
+	}
+
+	.stat span {
+		display: block;
+		font-size: 0.85rem;
+		color: rgb(var(--gray));
+	}
+
+	.stat strong {
+		font-size: 2.4rem;
+	}
+
+	.note p {
+		margin: 0;
+		font-size: 0.96rem;
+	}
+
+	.section-grid,
+	.latest-posts {
+		margin-top: 2.25rem;
+	}
+
+	.section-heading {
+		margin-bottom: 1.25rem;
+	}
+
+	.section-heading.row {
+		display: flex;
+		align-items: end;
+		justify-content: space-between;
+		gap: 1rem;
+	}
+
+	.topics,
+	.post-grid {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: 1rem;
+	}
+
+	.browse-columns {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 1rem;
+	}
+
+	.topics article,
+	.browse-box,
+	.post-card {
+		padding: 1.35rem;
+		border-radius: 1.4rem;
+		border: 1px solid rgba(var(--border), 0.8);
+		background: rgba(255, 253, 249, 0.82);
+		box-shadow: var(--card-shadow);
+	}
+
+	.nav-links {
+		display: flex;
+		gap: 1rem;
+		flex-wrap: wrap;
+	}
+
+	.browse-box ul {
+		display: grid;
+		gap: 0.8rem;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.browse-box li {
+		display: flex;
+		justify-content: space-between;
+		gap: 1rem;
+	}
+
+	.browse-box li span {
+		color: rgb(var(--gray));
+		white-space: nowrap;
+	}
+
+	.tag-list {
+		display: flex !important;
+		flex-wrap: wrap;
+		gap: 0.6rem;
+	}
+
+	.tag-list li a {
+		display: inline-block;
+		padding: 0.35rem 0.7rem;
+		border-radius: 999px;
+		background: rgba(var(--gray-light), 0.65);
+		font-size: 0.82rem;
+		text-decoration: none;
+		color: rgb(var(--gray-dark));
+	}
+
+	.post-card h3 {
+		margin-bottom: 0.8rem;
+	}
+
+	.post-card h3 a {
+		color: rgb(var(--black));
+		text-decoration: none;
+	}
+
+	.post-card h3 a:hover {
+		color: rgb(var(--accent-strong));
+	}
+
+	.meta {
+		display: flex;
+		justify-content: space-between;
+		gap: 1rem;
+		font-size: 0.85rem;
+		color: rgb(var(--gray));
+	}
+
+	@media (max-width: 900px) {
+		.hero,
+		.topics,
+		.browse-columns,
+		.post-grid {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	@media (max-width: 720px) {
+		.hero {
+			padding: 1.35rem;
+			border-radius: 1.5rem;
+		}
+
+		.section-heading.row {
+			align-items: flex-start;
+			flex-direction: column;
+		}
+
+		.meta {
+			flex-direction: column;
+			gap: 0.35rem;
+		}
+	}
+</style>

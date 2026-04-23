@@ -1,0 +1,114 @@
+﻿---
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import FormattedDate from '../../components/FormattedDate.astro';
+import Header from '../../components/Header.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../../consts';
+import { getCategoryHref, getPublishedPosts, groupPostsBy } from '../../utils/blog';
+
+export async function getStaticPaths() {
+	const tags = groupPostsBy(await getPublishedPosts(), 'tags');
+	return tags.map((tag) => ({
+		params: { slug: tag.slug },
+		props: tag,
+	}));
+}
+
+const tag = Astro.props;
+const title = `${tag.name} | 标签 | ${SITE_TITLE}`;
+---
+
+<!doctype html>
+<html lang="zh-CN">
+	<head>
+		<BaseHead title={title} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<section class="page-title">
+				<p class="eyebrow">Tag</p>
+				<h1>{tag.name}</h1>
+				<p>这个标签下目前有 {tag.count} 篇文章。</p>
+			</section>
+
+			<section class="post-list">
+				{
+					tag.posts.map((post) => (
+						<article class="post-item">
+							<p class="meta">
+								<a class="category-link" href={getCategoryHref(post.data.category)}>
+									{post.data.category}
+								</a>
+								<FormattedDate date={post.data.pubDate} />
+							</p>
+							<h2><a href={`/blog/${post.id}/`}>{post.data.title}</a></h2>
+							<p>{post.data.description}</p>
+						</article>
+					))
+				}
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.page-title {
+		margin-bottom: 1.5rem;
+	}
+
+	.eyebrow {
+		margin-bottom: 0.8rem;
+		font-size: 0.82rem;
+		letter-spacing: 0.12em;
+		text-transform: uppercase;
+		color: rgb(var(--gray));
+	}
+
+	.post-list {
+		display: grid;
+		gap: 1rem;
+	}
+
+	.post-item {
+		padding: 1.5rem;
+		border-radius: 1.5rem;
+		border: 1px solid rgba(var(--border), 0.8);
+		background: rgba(255, 253, 249, 0.84);
+		box-shadow: var(--card-shadow);
+	}
+
+	.post-item h2 {
+		margin-bottom: 0.6rem;
+	}
+
+	.post-item h2 a {
+		color: rgb(var(--black));
+		text-decoration: none;
+	}
+
+	.post-item h2 a:hover {
+		color: rgb(var(--accent-strong));
+	}
+
+	.meta {
+		display: flex;
+		justify-content: space-between;
+		gap: 1rem;
+		font-size: 0.88rem;
+		color: rgb(var(--gray));
+	}
+
+	.category-link {
+		text-decoration: none;
+		color: rgb(var(--accent-strong));
+	}
+
+	@media (max-width: 720px) {
+		.meta {
+			flex-direction: column;
+			gap: 0.4rem;
+		}
+	}
+</style>

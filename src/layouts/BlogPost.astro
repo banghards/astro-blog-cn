@@ -1,4 +1,4 @@
----
+﻿---
 import { Image } from 'astro:assets';
 import type { CollectionEntry } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
@@ -8,75 +8,40 @@ import Header from '../components/Header.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, category, tags } = Astro.props;
 ---
 
-<html lang="en">
+<html lang="zh-CN">
 	<head>
-		<BaseHead title={title} description={description} />
-		<style>
-			main {
-				width: calc(100% - 2em);
-				max-width: 100%;
-				margin: 0;
-			}
-			.hero-image {
-				width: 100%;
-			}
-			.hero-image img {
-				display: block;
-				margin: 0 auto;
-				border-radius: 12px;
-				box-shadow: var(--box-shadow);
-			}
-			.prose {
-				width: 720px;
-				max-width: calc(100% - 2em);
-				margin: auto;
-				padding: 1em;
-				color: rgb(var(--gray-dark));
-			}
-			.title {
-				margin-bottom: 1em;
-				padding: 1em 0;
-				text-align: center;
-				line-height: 1;
-			}
-			.title h1 {
-				margin: 0 0 0.5em 0;
-			}
-			.date {
-				margin-bottom: 0.5em;
-				color: rgb(var(--gray));
-			}
-			.last-updated-on {
-				font-style: italic;
-			}
-		</style>
+		<BaseHead title={title} description={description} image={heroImage} />
 	</head>
 
 	<body>
 		<Header />
 		<main>
-			<article>
-				<div class="hero-image">
-					{heroImage && <Image width={1020} height={510} src={heroImage} alt="" />}
+			<article class="article-shell">
+				<div class="article-header">
+					<p class="meta">
+						<span>{category}</span>
+						<FormattedDate date={pubDate} />
+					</p>
+					<h1>{title}</h1>
+					<p class="description">{description}</p>
+					{tags.length > 0 && (
+						<ul class="tags">
+							{tags.map((tag) => <li>{tag}</li>)}
+						</ul>
+					)}
+					{updatedDate && (
+						<p class="updated">最近更新：<FormattedDate date={updatedDate} /></p>
+					)}
 				</div>
-				<div class="prose">
-					<div class="title">
-						<div class="date">
-							<FormattedDate date={pubDate} />
-							{
-								updatedDate && (
-									<div class="last-updated-on">
-										Last updated on <FormattedDate date={updatedDate} />
-									</div>
-								)
-							}
-						</div>
-						<h1>{title}</h1>
-						<hr />
+				{heroImage && (
+					<div class="hero-image">
+						<Image width={1200} height={640} src={heroImage} alt={title} />
 					</div>
+				)}
+				<div class="prose content-card">
 					<slot />
 				</div>
 			</article>
@@ -84,3 +49,84 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 		<Footer />
 	</body>
 </html>
+
+<style>
+	.article-shell {
+		width: min(860px, 100%);
+		margin: 0 auto;
+	}
+
+	.article-header {
+		padding: 1rem 0 1.5rem;
+		text-align: center;
+	}
+
+	.meta,
+	.updated {
+		color: rgb(var(--gray));
+		font-size: 0.9rem;
+	}
+
+	.meta {
+		display: flex;
+		justify-content: center;
+		gap: 1rem;
+		margin-bottom: 1rem;
+	}
+
+	.description {
+		max-width: 40rem;
+		margin: 0.75rem auto 0;
+		font-size: 1.05rem;
+	}
+
+	.tags {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 0.6rem;
+		padding: 0;
+		margin: 1rem 0 0;
+		list-style: none;
+	}
+
+	.tags li {
+		padding: 0.35rem 0.7rem;
+		border-radius: 999px;
+		background: rgba(var(--gray-light), 0.65);
+		font-size: 0.82rem;
+	}
+
+	.updated {
+		margin-top: 0.9rem;
+	}
+
+	.hero-image {
+		margin: 1rem 0 1.25rem;
+	}
+
+	.hero-image img {
+		display: block;
+		width: 100%;
+		box-shadow: var(--card-shadow);
+	}
+
+	.content-card {
+		padding: 1.6rem;
+		border-radius: 1.6rem;
+		background: rgba(255, 253, 249, 0.84);
+		border: 1px solid rgba(var(--border), 0.8);
+		box-shadow: var(--card-shadow);
+	}
+
+	@media (max-width: 720px) {
+		.meta {
+			flex-direction: column;
+			gap: 0.4rem;
+		}
+
+		.content-card {
+			padding: 1.1rem;
+		}
+	}
+</style>

@@ -1,63 +1,139 @@
-# Astro Starter Kit: Blog
+# Larus Blog
 
-```sh
-npm create astro@latest -- --template blog
+一个基于 `Astro` 的中文个人博客，适合写技术文章、AI 工具评测、资源整理和长期随笔。
+
+## 本地开发
+
+```bash
+npm install
+npm run dev
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-Features:
-
-- ✅ Minimal styling (make it your own!)
-- ✅ 100/100 Lighthouse performance
-- ✅ SEO-friendly with canonical URLs and Open Graph data
-- ✅ Sitemap support
-- ✅ RSS Feed support
-- ✅ Markdown & MDX support
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
+本地访问：
 
 ```text
-├── public/
-├── src/
-│   ├── assets/
-│   ├── components/
-│   ├── content/
-│   ├── layouts/
-│   └── pages/
-├── astro.config.mjs
-├── README.md
-├── package.json
-└── tsconfig.json
+http://localhost:4321/
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## 常用命令
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+| 命令 | 作用 |
+| --- | --- |
+| `npm run dev` | 启动本地开发环境 |
+| `npm run build` | 构建静态站点到 `dist/` |
+| `npm run preview` | 本地预览构建结果 |
 
-The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
+## 内容目录
 
-Any static assets, like images, can be placed in the `public/` directory.
+```text
+src/
+  components/   公共组件
+  content/blog/ 博客文章 Markdown
+  layouts/      页面布局
+  pages/        路由页面
+  utils/        内容聚合工具
+```
 
-## 🧞 Commands
+你以后最常改的文件：
 
-All commands are run from the root of the project, from a terminal:
+- `src/consts.ts`：站点名称、描述、作者信息
+- `src/content/blog/`：新增和修改文章
+- `src/pages/index.astro`：首页内容
+- `src/styles/global.css`：全局视觉风格
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## 新文章格式
 
-## 👀 Want to learn more?
+```md
+---
+title: 文章标题
+description: 一句话摘要
+pubDate: 2026-04-23
+category: AI与科技
+tags:
+  - AI
+  - 工具评测
+draft: false
+---
 
-Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+正文开始。
+```
 
-## Credit
+## 部署到 Vercel
 
-This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
+这个项目已经做好了 Vercel 部署准备：
+
+- `Astro` 输出为静态站点
+- `astro.config.mjs` 会优先读取 `SITE_URL`
+- 如果在 Vercel 上构建，也会自动读取 `VERCEL_URL`
+
+### 方式一：网页连接 GitHub
+
+最省心，推荐长期使用。
+
+1. 把项目推到 GitHub。
+2. 打开 Vercel，选择 `Add New Project`。
+3. 导入这个仓库。
+4. Framework 识别为 `Astro` 即可，通常不用额外改构建命令。
+5. 点击部署。
+
+建议在 Vercel 项目里补一个环境变量：
+
+```text
+SITE_URL=https://你的正式域名
+```
+
+比如：
+
+```text
+SITE_URL=https://blog.example.com
+```
+
+这样 sitemap、RSS、canonical URL 会直接使用你的正式地址。
+
+### 方式二：命令行部署
+
+如果你本机已经登录了 Vercel：
+
+```bash
+vercel
+```
+
+首次会引导你完成：
+
+- 登录账号
+- 关联项目
+- 选择是否立即部署预览环境
+
+正式生产部署：
+
+```bash
+vercel --prod
+```
+
+### 推荐设置
+
+在 Vercel 项目后台建议补上：
+
+- `SITE_URL=https://你的正式域名`
+
+如果你后面绑定了自定义域名，再把这个值改成正式域名即可。
+
+## 当前已具备的页面
+
+- 首页
+- 文章列表页
+- 文章详情页
+- 分类页
+- 标签页
+- 归档页
+- 关于页
+- RSS
+- Sitemap
+
+## 下一步可以继续做
+
+- 绑定自定义域名
+- 接入评论系统
+- 增加搜索
+- 统一分类和标签命名
+- 批量迁移更多 Markdown 文稿

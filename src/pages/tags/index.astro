@@ -1,0 +1,75 @@
+﻿---
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import Header from '../../components/Header.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../../consts';
+import { getPublishedPosts, getTagHref, groupPostsBy } from '../../utils/blog';
+
+const tags = groupPostsBy(await getPublishedPosts(), 'tags');
+---
+
+<!doctype html>
+<html lang="zh-CN">
+	<head>
+		<BaseHead title={`标签 | ${SITE_TITLE}`} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<section class="page-title">
+				<p class="eyebrow">Tags</p>
+				<h1>标签</h1>
+				<p>标签更细一些，适合快速串起相近主题的文章。</p>
+			</section>
+
+			<section class="tag-cloud">
+				{
+					tags.map((tag) => (
+						<a class="tag-chip" href={getTagHref(tag.name)}>
+							<span>{tag.name}</span>
+							<strong>{tag.count}</strong>
+						</a>
+					))
+				}
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.page-title {
+		margin-bottom: 1.5rem;
+	}
+
+	.eyebrow {
+		margin-bottom: 0.8rem;
+		font-size: 0.82rem;
+		letter-spacing: 0.12em;
+		text-transform: uppercase;
+		color: rgb(var(--gray));
+	}
+
+	.tag-cloud {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.85rem;
+	}
+
+	.tag-chip {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.65rem;
+		padding: 0.85rem 1rem;
+		border-radius: 999px;
+		border: 1px solid rgba(var(--border), 0.8);
+		background: rgba(255, 253, 249, 0.84);
+		box-shadow: var(--card-shadow);
+		text-decoration: none;
+		color: rgb(var(--gray-dark));
+	}
+
+	.tag-chip strong {
+		color: rgb(var(--accent-strong));
+	}
+</style>
