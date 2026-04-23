@@ -13,6 +13,11 @@ if ([string]::IsNullOrWhiteSpace($message)) {
 
 Write-Host "==> Checking working tree"
 git status --short
+$pending = git status --porcelain
+if ([string]::IsNullOrWhiteSpace(($pending -join "").Trim())) {
+  Write-Host "No changes to publish."
+  exit 0
+}
 
 Write-Host "==> Staging changes"
 git add -A
