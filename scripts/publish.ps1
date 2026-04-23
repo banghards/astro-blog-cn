@@ -7,17 +7,17 @@ $ErrorActionPreference = "Stop"
 $message = ($MessageParts -join " ").Trim()
 
 if ([string]::IsNullOrWhiteSpace($message)) {
-  Write-Host "Usage: npm run ship -- `"commit message`""
-  exit 1
+  $message = "更新博客内容 " + (Get-Date -Format "yyyy-MM-dd HH:mm")
 }
 
 Write-Host "==> Checking working tree"
-git status --short
 $pending = git status --porcelain
 if ([string]::IsNullOrWhiteSpace(($pending -join "").Trim())) {
   Write-Host "No changes to publish."
   exit 0
 }
+
+git status --short
 
 Write-Host "==> Staging changes"
 git add -A
