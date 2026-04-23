@@ -1,4 +1,4 @@
-﻿---
+---
 title: 白嫖电子书攻略：4 个网站帮你省下一大笔书钱
 description: 一篇资源型整理，收录常见免费电子书网站与搜索入口，并附带一则 AI 赛事信息。
 pubDate: 2026-04-23
@@ -9,18 +9,12 @@ tags:
   - 阅读
   - 工具站
 draft: false
-author: 鸟哥 | 蓝鸟会
-source: https://x.com/NFTCPS/status/2047146902156947750
-heroImage: ../../assets/blog-placeholder-5.jpg
+heroImage: ../../assets/posts/covers/books-cover.jpg
 ---
-
-> 来源：[X @NFTCPS](https://x.com/NFTCPS/status/2047146902156947750)
-> 作者：鸟哥 | 蓝鸟会（@NFTCPS）
-> 日期：2026 年 4 月 23 日
 
 书荒、找不到资源、想先快速判断一本书值不值得买，这类需求经常会把人带到各种电子书资源站。
 
-下面是一份原始整理稿，我把结构收顺了一下，方便直接放进博客里检索和回看。
+下面是一份整理后的可检索清单，方便直接放进博客里长期回看。
 
 ## 免费电子书网站推荐
 
@@ -69,7 +63,7 @@ heroImage: ../../assets/blog-placeholder-5.jpg
 
 ## 附：AI 超级个体大赛
 
-原帖还顺手提到一个赛事信息：由 WAIC 主办的首届 OPC 大赛在 **2026 年 4 月 30 日** 截止报名。
+这份整理还顺手提到一个赛事信息：由 WAIC 主办的首届 OPC 大赛在 **2026 年 4 月 30 日** 截止报名。
 
 - 赛事页：https://worldaic.com.cn/fabu?uuid=59152a392da1429da2e2dec27bb7301e
 - 报名通道：https://doc.weixin.qq.com/forms/AHIAwgf5AAoAHYARAaAAHkCNpTeHWvCkf

@@ -1,23 +1,17 @@
-﻿---
+---
 title: 装了啥 2026：一份 AI Coding 工具栈清单
 description: 基于 sorrycc 的 2026 年工具清单整理，覆盖 Cursor、Claude Code、Tailscale、LM Studio、Raycast 等常用工具。
 pubDate: 2026-04-16
 category: 工具与工作流
 tags:
-  - AI Coding
+  - AI 编程
   - Cursor
   - Claude Code
   - Raycast
   - Tailscale
 draft: false
-author: sorrycc
-source: https://blog.sorrycc.com/zhuang-2026
-heroImage: ../../assets/blog-placeholder-2.jpg
+heroImage: ../../assets/posts/covers/zhuang-cover.webp
 ---
-
-> 原文：[https://blog.sorrycc.com/zhuang-2026](https://blog.sorrycc.com/zhuang-2026)
-> 作者：sorrycc
-> 发布日期：2026-04-16
 
 去年《装了啥 2025》的开头里，作者提到自己刚更新了一批 AI 相关工具。到了 2026，这批工具已经从“新增”变成了完整工作流，尤其是 AI Coding 几乎单独长成了一个大类。
 
