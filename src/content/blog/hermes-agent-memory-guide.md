@@ -1,5 +1,5 @@
 ---
-title: Hermes Agent 总是“失忆”？一篇讲透长期记忆、Profile 和进阶配置
+title: Hermes Agent 为什么总像“失忆”？99% 的人都没搞懂这套长期记忆机制
 description: 一篇围绕 Hermes Agent 记忆系统的进阶整理，重点讲清三层记忆架构、为什么 Agent 会“失忆”、以及如何正确配置长期记忆、Profile 和生产部署。
 pubDate: 2026-04-23
 category: AI与科技
