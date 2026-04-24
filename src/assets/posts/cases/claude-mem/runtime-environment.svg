@@ -1,0 +1,30 @@
+<svg width="1400" height="820" viewBox="0 0 1400 820" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1400" height="820" fill="#F7EFE2"/>
+  <text x="90" y="96" fill="#2E241C" font-family="'Trebuchet MS', 'Noto Sans SC', sans-serif" font-size="50" font-weight="800">Claude Mem 的运行环境</text>
+  <rect x="104" y="171" width="300" height="162" rx="28" fill="#FFF8F0" stroke="#2E241C" stroke-width="7"/>
+  <rect x="552" y="171" width="300" height="162" rx="28" fill="#FEE6C4" stroke="#2E241C" stroke-width="7"/>
+  <rect x="1000" y="171" width="300" height="162" rx="28" fill="#DCE9F8" stroke="#2E241C" stroke-width="7"/>
+  <rect x="328" y="460" width="300" height="162" rx="28" fill="#FBD1B0" stroke="#2E241C" stroke-width="7"/>
+  <rect x="776" y="460" width="300" height="162" rx="28" fill="#DDEBC9" stroke="#2E241C" stroke-width="7"/>
+  <path d="M404 252H520" stroke="#2E241C" stroke-width="7" stroke-linecap="round"/>
+  <path d="M852 252H968" stroke="#2E241C" stroke-width="7" stroke-linecap="round"/>
+  <path d="M702 333V423" stroke="#2E241C" stroke-width="7" stroke-linecap="round"/>
+  <path d="M968 549H1076" stroke="#2E241C" stroke-width="7" stroke-linecap="round"/>
+  <path d="M628 549H744" stroke="#2E241C" stroke-width="7" stroke-linecap="round"/>
+  <text x="145" y="228" fill="#2E241C" font-family="'Trebuchet MS', 'Noto Sans SC', sans-serif" font-size="34" font-weight="800">Claude Code /</text>
+  <text x="145" y="268" fill="#2E241C" font-family="'Trebuchet MS', 'Noto Sans SC', sans-serif" font-size="34" font-weight="800">Gemini CLI / OpenCode</text>
+  <text x="145" y="312" fill="#2E241C" font-family="'Trebuchet MS', 'Noto Sans SC', sans-serif" font-size="22">支持多种 AI CLI 入口</text>
+  <text x="598" y="228" fill="#2E241C" font-family="'Trebuchet MS', 'Noto Sans SC', sans-serif" font-size="34" font-weight="800">Lifecycle Hooks</text>
+  <text x="598" y="272" fill="#2E241C" font-family="'Trebuchet MS', 'Noto Sans SC', sans-serif" font-size="22">SessionStart / PostToolUse</text>
+  <text x="598" y="304" fill="#2E241C" font-family="'Trebuchet MS', 'Noto Sans SC', sans-serif" font-size="22">Stop / SessionEnd 等</text>
+  <text x="1041" y="228" fill="#2E241C" font-family="'Trebuchet MS', 'Noto Sans SC', sans-serif" font-size="34" font-weight="800">Worker Service</text>
+  <text x="1041" y="272" fill="#2E241C" font-family="'Trebuchet MS', 'Noto Sans SC', sans-serif" font-size="22">Bun 管理，本地跑在</text>
+  <text x="1041" y="304" fill="#2E241C" font-family="'Trebuchet MS', 'Noto Sans SC', sans-serif" font-size="22">localhost:37777</text>
+  <text x="376" y="517" fill="#2E241C" font-family="'Trebuchet MS', 'Noto Sans SC', sans-serif" font-size="34" font-weight="800">SQLite</text>
+  <text x="376" y="561" fill="#2E241C" font-family="'Trebuchet MS', 'Noto Sans SC', sans-serif" font-size="22">存 sessions / observations</text>
+  <text x="376" y="593" fill="#2E241C" font-family="'Trebuchet MS', 'Noto Sans SC', sans-serif" font-size="22">/ summaries</text>
+  <text x="826" y="517" fill="#2E241C" font-family="'Trebuchet MS', 'Noto Sans SC', sans-serif" font-size="34" font-weight="800">Chroma + mem-search</text>
+  <text x="826" y="561" fill="#2E241C" font-family="'Trebuchet MS', 'Noto Sans SC', sans-serif" font-size="22">混合关键词 + 语义检索</text>
+  <text x="825" y="593" fill="#2E241C" font-family="'Trebuchet MS', 'Noto Sans SC', sans-serif" font-size="22">用于未来会话回注</text>
+  <text x="94" y="730" fill="#2E241C" font-family="'Trebuchet MS', 'Noto Sans SC', sans-serif" font-size="28" font-weight="700">运行要求：Node &gt;= 18，Bun &gt;= 1，本地命令行环境更合适。</text>
+</svg>

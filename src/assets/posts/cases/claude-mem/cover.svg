@@ -1,0 +1,24 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#F7F0E4"/>
+  <path d="M110 130C287 88 447 90 606 112C792 138 948 114 1136 104C1270 96 1390 103 1495 133" stroke="#2F241B" stroke-width="8" stroke-linecap="round"/>
+  <path d="M87 747C256 704 460 687 690 709C891 729 1099 745 1307 716C1388 705 1450 690 1512 667" stroke="#2F241B" stroke-width="8" stroke-linecap="round"/>
+  <rect x="150" y="180" width="780" height="500" rx="36" fill="#FFF9F1" stroke="#2F241B" stroke-width="8"/>
+  <rect x="980" y="230" width="430" height="350" rx="28" fill="#FDE9B9" stroke="#2F241B" stroke-width="8"/>
+  <path d="M1020 294C1088 271 1153 264 1212 270C1284 277 1340 303 1386 352" stroke="#2F241B" stroke-width="8" stroke-linecap="round"/>
+  <path d="M1032 423C1095 400 1152 389 1218 392C1283 395 1342 413 1395 452" stroke="#2F241B" stroke-width="8" stroke-linecap="round"/>
+  <path d="M1053 526C1128 511 1192 508 1269 514C1326 519 1375 534 1413 556" stroke="#2F241B" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="1260" cy="151" r="55" fill="#F59F6C" stroke="#2F241B" stroke-width="8"/>
+  <path d="M1241 153L1255 167L1284 138" stroke="#2F241B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M231 282H850" stroke="#2F241B" stroke-width="8" stroke-linecap="round"/>
+  <path d="M231 350H620" stroke="#2F241B" stroke-width="8" stroke-linecap="round"/>
+  <path d="M231 408H778" stroke="#2F241B" stroke-width="8" stroke-linecap="round"/>
+  <path d="M231 469H562" stroke="#2F241B" stroke-width="8" stroke-linecap="round"/>
+  <path d="M230 537H676" stroke="#2F241B" stroke-width="8" stroke-linecap="round"/>
+  <rect x="734" y="497" width="138" height="106" rx="18" fill="#F59F6C" stroke="#2F241B" stroke-width="8"/>
+  <path d="M768 531H838" stroke="#2F241B" stroke-width="8" stroke-linecap="round"/>
+  <path d="M768 566H818" stroke="#2F241B" stroke-width="8" stroke-linecap="round"/>
+  <path d="M989 651C1038 619 1091 598 1164 592C1247 585 1310 599 1395 645" stroke="#2F241B" stroke-width="8" stroke-linecap="round"/>
+  <text x="153" y="101" fill="#2F241B" font-family="'Trebuchet MS', 'Noto Sans SC', sans-serif" font-size="38" font-weight="700">Hand-drawn explainer</text>
+  <text x="197" y="770" fill="#2F241B" font-family="'Trebuchet MS', 'Noto Sans SC', sans-serif" font-size="86" font-weight="800">Claude Mem</text>
+  <text x="197" y="846" fill="#2F241B" font-family="'Trebuchet MS', 'Noto Sans SC', sans-serif" font-size="42" font-weight="600">给 Claude Code 做长期记忆的插件系统</text>
+</svg>

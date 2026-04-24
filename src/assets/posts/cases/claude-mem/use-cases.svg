@@ -1,0 +1,18 @@
+<svg width="1400" height="820" viewBox="0 0 1400 820" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1400" height="820" fill="#F8F0E4"/>
+  <text x="90" y="100" fill="#2E241C" font-family="'Trebuchet MS', 'Noto Sans SC', sans-serif" font-size="50" font-weight="800">Claude Mem 更适合谁</text>
+  <rect x="90" y="180" width="570" height="500" rx="32" fill="#DDEBC9" stroke="#2E241C" stroke-width="7"/>
+  <rect x="740" y="180" width="570" height="500" rx="32" fill="#FDD6B1" stroke="#2E241C" stroke-width="7"/>
+  <text x="132" y="248" fill="#2E241C" font-family="'Trebuchet MS', 'Noto Sans SC', sans-serif" font-size="38" font-weight="800">很适合</text>
+  <text x="132" y="318" fill="#2E241C" font-family="'Trebuchet MS', 'Noto Sans SC', sans-serif" font-size="28">- 持续用 Claude Code 做开发</text>
+  <text x="132" y="370" fill="#2E241C" font-family="'Trebuchet MS', 'Noto Sans SC', sans-serif" font-size="28">- 一个项目要跨多天推进</text>
+  <text x="132" y="422" fill="#2E241C" font-family="'Trebuchet MS', 'Noto Sans SC', sans-serif" font-size="28">- 希望 AI 记住目录、约定和决策</text>
+  <text x="132" y="474" fill="#2E241C" font-family="'Trebuchet MS', 'Noto Sans SC', sans-serif" font-size="28">- 想查回过去改动和 observation</text>
+  <text x="132" y="526" fill="#2E241C" font-family="'Trebuchet MS', 'Noto Sans SC', sans-serif" font-size="28">- 在意上下文质量和 token 成本</text>
+  <text x="782" y="248" fill="#2E241C" font-family="'Trebuchet MS', 'Noto Sans SC', sans-serif" font-size="38" font-weight="800">没那么适合</text>
+  <text x="782" y="318" fill="#2E241C" font-family="'Trebuchet MS', 'Noto Sans SC', sans-serif" font-size="28">- 只偶尔问几个临时问题</text>
+  <text x="782" y="370" fill="#2E241C" font-family="'Trebuchet MS', 'Noto Sans SC', sans-serif" font-size="28">- 不想装本地依赖和后台服务</text>
+  <text x="782" y="422" fill="#2E241C" font-family="'Trebuchet MS', 'Noto Sans SC', sans-serif" font-size="28">- 不会长期维护同一项目上下文</text>
+  <text x="782" y="474" fill="#2E241C" font-family="'Trebuchet MS', 'Noto Sans SC', sans-serif" font-size="28">- 更偏网页端轻量聊天场景</text>
+  <path d="M565 706C618 742 675 751 725 742C775 733 817 708 847 678" stroke="#2E241C" stroke-width="7" stroke-linecap="round"/>
+</svg>
