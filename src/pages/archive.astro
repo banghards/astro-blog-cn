@@ -4,7 +4,7 @@ import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
-import { getCategoryHref, getPublishedPosts, groupPostsByYear } from '../utils/blog';
+import { getCategoryHref, getPostHref, getPublishedPosts, groupPostsByYear } from '../utils/blog';
 
 const posts = await getPublishedPosts();
 const archive = groupPostsByYear(posts);
@@ -21,7 +21,7 @@ const archive = groupPostsByYear(posts);
 			<section class="page-title">
 				<p class="eyebrow">Archive</p>
 				<h1>归档</h1>
-				<p>按年份回看所有文章，适合快速检查这个博客到底积累了什么。</p>
+				<p>按年份回看所有文章，适合快速了解这个博客一路积累了什么。</p>
 			</section>
 
 			<section class="archive-list">
@@ -36,7 +36,7 @@ const archive = groupPostsByYear(posts);
 								{group.posts.map((post) => (
 									<li>
 										<div class="post-main">
-											<h3><a href={`/blog/${post.id}/`}>{post.data.title}</a></h3>
+											<h3><a href={getPostHref(post)}>{post.data.title}</a></h3>
 											<p>{post.data.description}</p>
 										</div>
 										<div class="post-meta">

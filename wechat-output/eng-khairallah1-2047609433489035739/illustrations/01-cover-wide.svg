@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="800" viewBox="0 0 1800 800">
+  <rect width="1800" height="800" fill="#F5EFE5"/>
+  <rect x="40" y="40" width="1720" height="720" rx="28" fill="none" stroke="#161616" stroke-width="3"/>
+  <text x="90" y="185" font-size="74" font-family="Georgia, 'Times New Roman', serif" font-weight="700" fill="#111111">40 个 Claude Cowork 命令、工作流与自动化思路</text>
+  <text x="92" y="255" font-size="30" font-family="'Microsoft YaHei', sans-serif" fill="#4B4B4B">不是命令堆砌，而是把重复劳动重写成可交付流程</text>
+  <g transform="translate(90 330)">
+    <rect x="0" y="0" width="520" height="300" rx="24" fill="#FFF9F1" stroke="#111111" stroke-width="3"/>
+    <text x="34" y="62" font-size="34" font-family="'Microsoft YaHei', sans-serif" font-weight="700" fill="#C26139">Claude Cowork</text>
+    <text x="34" y="118" font-size="28" font-family="'Microsoft YaHei', sans-serif" fill="#222222">文件整理</text>
+    <text x="34" y="160" font-size="28" font-family="'Microsoft YaHei', sans-serif" fill="#222222">研究汇总</text>
+    <text x="34" y="202" font-size="28" font-family="'Microsoft YaHei', sans-serif" fill="#222222">内容改写</text>
+    <text x="34" y="244" font-size="28" font-family="'Microsoft YaHei', sans-serif" fill="#222222">运营自动化</text>
+  </g>
+  <g transform="translate(700 290)">
+    <circle cx="170" cy="120" r="90" fill="#EFE4D6" stroke="#111111" stroke-width="3"/>
+    <text x="108" y="112" font-size="26" font-family="'Microsoft YaHei', sans-serif" font-weight="700" fill="#111111">Workflow</text>
+    <text x="120" y="146" font-size="26" font-family="'Microsoft YaHei', sans-serif" font-weight="700" fill="#111111">Logic</text>
+    <rect x="0" y="0" width="90" height="58" rx="14" fill="#C26139"/>
+    <rect x="350" y="10" width="110" height="64" rx="14" fill="#111111"/>
+    <rect x="420" y="190" width="120" height="70" rx="14" fill="#BDA58A"/>
+    <line x1="90" y1="30" x2="110" y2="60" stroke="#111111" stroke-width="4"/>
+    <line x1="260" y1="70" x2="350" y2="42" stroke="#111111" stroke-width="4"/>
+    <line x1="255" y1="165" x2="420" y2="222" stroke="#111111" stroke-width="4"/>
+  </g>
+  <g transform="translate(1310 260)">
+    <rect x="0" y="0" width="360" height="360" rx="26" fill="#FFF9F1" stroke="#111111" stroke-width="3"/>
+    <text x="34" y="64" font-size="30" font-family="'Microsoft YaHei', sans-serif" font-weight="700" fill="#111111">高价值用法</text>
+    <text x="34" y="122" font-size="24" font-family="'Microsoft YaHei', sans-serif" fill="#333333">扫描 -> 分类 -> 重命名</text>
+    <text x="34" y="166" font-size="24" font-family="'Microsoft YaHei', sans-serif" fill="#333333">汇总 -> 提炼 -> 交付</text>
+    <text x="34" y="210" font-size="24" font-family="'Microsoft YaHei', sans-serif" fill="#333333">读资料 -> 出框架 -> 改写</text>
+    <text x="34" y="254" font-size="24" font-family="'Microsoft YaHei', sans-serif" fill="#333333">重复任务 -> 模板化 -> 自动化</text>
+  </g>
+</svg>

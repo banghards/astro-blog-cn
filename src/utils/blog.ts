@@ -1,11 +1,18 @@
-﻿import { getCollection, type CollectionEntry } from 'astro:content';
-
+import { getCollection, type CollectionEntry } from 'astro:content';
 export type BlogPost = CollectionEntry<'blog'>;
 
 export async function getPublishedPosts() {
 	return (await getCollection('blog'))
 		.filter((post) => !post.data.draft)
 		.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+}
+
+export async function getPostBySlug(slug: string) {
+	return (await getCollection('blog')).find((post) => post.id === slug);
+}
+
+export async function getPublishedPostSlugs() {
+	return (await getPublishedPosts()).map((post) => post.id);
 }
 
 export function toTaxonomySlug(value: string) {
@@ -43,6 +50,10 @@ export function getCategoryHref(category: string) {
 
 export function getTagHref(tag: string) {
 	return `/tags/${toTaxonomySlug(tag)}/`;
+}
+
+export function getPostHref(post: Pick<BlogPost, 'id'>) {
+	return `/blog/${post.id}/`;
 }
 
 export function groupPostsByYear(items: BlogPost[]) {

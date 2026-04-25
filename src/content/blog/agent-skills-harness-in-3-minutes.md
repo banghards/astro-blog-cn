@@ -253,7 +253,7 @@ heroImage: ../../assets/posts/cases/agent-skills-harness/cover.png
 真正的现代 AI 应用，往往是一个从下往上逐层抬升的系统：
 
 - 底层是执行能力
-- 中层是编排与运行
+	- 中层是编排与运行
 - 上层是流程接入与人类治理
 
 ![人机协作闭环](../../assets/posts/cases/agent-skills-harness/human-in-loop.png)

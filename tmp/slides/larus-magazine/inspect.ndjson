@@ -1,0 +1,163 @@
+{"kind":"deck","id":"larus-magazine","slideCount":6,"slideSize":{"width":1280,"height":720}}
+{"kind":"slide","slide":1,"id":"hnhx8y"}
+{"kind":"slide","slide":2,"id":"dya052"}
+{"kind":"slide","slide":3,"id":"p5bwcb"}
+{"kind":"slide","slide":4,"id":"u91ig5"}
+{"kind":"slide","slide":5,"id":"2ql5an"}
+{"kind":"slide","slide":6,"id":"tu8svt"}
+{"kind":"image","slide":1,"id":"2","role":"art plate","path":"D:\\AI\\astro-blog-cn\\tmp\\slides\\pro-reference-images\\slide-01.png","bbox":[0,0,1280,720]}
+{"kind":"shape","slide":1,"id":"3","role":"cover contrast overlay","shapeType":"rect","bbox":[0,0,1280,720]}
+{"kind":"shape","slide":1,"id":"4","role":"cover accent rule","shapeType":"rect","bbox":[64,86,7,455]}
+{"kind":"textbox","slide":1,"id":"5","role":"kicker","text":"Editorial Overview","textPreview":"Editorial Overview","textChars":18,"textLines":1,"bbox":[86,88,520,26]}
+{"kind":"textbox","slide":1,"id":"6","role":"cover title","text":"Larus Blog","textPreview":"Larus Blog","textChars":10,"textLines":1,"bbox":[82,130,785,184]}
+{"kind":"textbox","slide":1,"id":"7","role":"cover subtitle","text":"把零散灵感、AI 实验与长期写作，整理成一份可持续更新的中文内容样本。","textPreview":"把零散灵感、AI 实验与长期写作，整理成一份可持续更新的中文内容样本。","textChars":35,"textLines":1,"bbox":[86,326,610,86]}
+{"kind":"shape","slide":1,"id":"8","role":"cover moment panel","shapeType":"roundRect","bbox":[86,456,390,92]}
+{"kind":"textbox","slide":1,"id":"9","role":"cover moment","text":"一座给未来自己的技术与生活备忘录","textPreview":"一座给未来自己的技术与生活备忘录","textChars":16,"textLines":1,"bbox":[112,478,336,40]}
+{"kind":"textbox","slide":1,"id":"10","role":"caption","text":"Larus Blog · April 2026","textPreview":"Larus Blog · April 2026","textChars":23,"textLines":1,"bbox":[64,674,260,22]}
+{"kind":"image","slide":2,"id":"2","role":"art plate","path":"D:\\AI\\astro-blog-cn\\tmp\\slides\\pro-reference-images\\slide-02.png","bbox":[0,0,1280,720]}
+{"kind":"shape","slide":2,"id":"3","role":"metrics contrast overlay","shapeType":"rect","bbox":[0,0,1280,720]}
+{"kind":"textbox","slide":2,"id":"4","role":"header","text":"SYSTEM SNAPSHOT","textPreview":"SYSTEM SNAPSHOT","textChars":15,"textLines":1,"bbox":[64,34,430,24]}
+{"kind":"textbox","slide":2,"id":"5","role":"header","text":"02 / 06","textPreview":"02 / 06","textChars":7,"textLines":1,"bbox":[1114,34,104,24]}
+{"kind":"shape","slide":2,"id":"6","role":"header rule","shapeType":"rect","bbox":[64,64,1152,2]}
+{"kind":"shape","slide":2,"id":"7","role":"header marker","shapeType":"ellipse","bbox":[57,57,16,16]}
+{"kind":"textbox","slide":2,"id":"8","role":"title","text":"一个小型站点，已经具备完整的内容闭环","textPreview":"一个小型站点，已经具备完整的内容闭环","textChars":18,"textLines":1,"bbox":[64,86,700,142]}
+{"kind":"textbox","slide":2,"id":"9","role":"subtitle","text":"从首页到归档、从 Markdown 到 Notion，这个项目已经不是单页展示，而是可继续生长的写作底盘。","textPreview":"从首页到归档、从 Markdown 到 Notion，这个项目已经不是单页展示，而是可继续生长的写作底盘。","textChars":53,"textLines":1,"bbox":[66,234,700,70]}
+{"kind":"shape","slide":2,"id":"10","role":"metric panel: 已发布文章","shapeType":"roundRect","bbox":[92,404,330,174]}
+{"kind":"shape","slide":2,"id":"11","role":"metric accent: 已发布文章","shapeType":"rect","bbox":[92,404,330,7]}
+{"kind":"textbox","slide":2,"id":"12","role":"metric value","text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[114,428,286,54]}
+{"kind":"textbox","slide":2,"id":"13","role":"metric label","text":"已发布文章","textPreview":"已发布文章","textChars":5,"textLines":1,"bbox":[116,486,282,38]}
+{"kind":"textbox","slide":2,"id":"14","role":"metric note","text":"4 篇本地 Markdown 内容","textPreview":"4 篇本地 Markdown 内容","textChars":17,"textLines":1,"bbox":[116,536,282,22]}
+{"kind":"shape","slide":2,"id":"15","role":"metric panel: 内容分类","shapeType":"roundRect","bbox":[462,404,330,174]}
+{"kind":"shape","slide":2,"id":"16","role":"metric accent: 内容分类","shapeType":"rect","bbox":[462,404,330,7]}
+{"kind":"textbox","slide":2,"id":"17","role":"metric value","text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[484,428,286,54]}
+{"kind":"textbox","slide":2,"id":"18","role":"metric label","text":"内容分类","textPreview":"内容分类","textChars":4,"textLines":1,"bbox":[486,486,282,38]}
+{"kind":"textbox","slide":2,"id":"19","role":"metric note","text":"AI 与科技 / 开站记录","textPreview":"AI 与科技 / 开站记录","textChars":13,"textLines":1,"bbox":[486,536,282,22]}
+{"kind":"shape","slide":2,"id":"20","role":"metric panel: 统一入口","shapeType":"roundRect","bbox":[832,404,330,174]}
+{"kind":"shape","slide":2,"id":"21","role":"metric accent: 统一入口","shapeType":"rect","bbox":[832,404,330,7]}
+{"kind":"textbox","slide":2,"id":"22","role":"metric value","text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[854,428,286,54]}
+{"kind":"textbox","slide":2,"id":"23","role":"metric label","text":"统一入口","textPreview":"统一入口","textChars":4,"textLines":1,"bbox":[856,486,282,38]}
+{"kind":"textbox","slide":2,"id":"24","role":"metric note","text":"支持 Markdown 与 Notion 双来源","textPreview":"支持 Markdown 与 Notion 双来源","textChars":24,"textLines":1,"bbox":[856,536,282,22]}
+{"kind":"textbox","slide":2,"id":"25","role":"caption","text":"Larus Blog · April 2026","textPreview":"Larus Blog · April 2026","textChars":23,"textLines":1,"bbox":[64,674,260,22]}
+{"kind":"image","slide":3,"id":"2","role":"art plate","path":"D:\\AI\\astro-blog-cn\\tmp\\slides\\pro-reference-images\\slide-03.png","bbox":[0,0,1280,720]}
+{"kind":"shape","slide":3,"id":"3","role":"content contrast overlay","shapeType":"rect","bbox":[0,0,1280,720]}
+{"kind":"textbox","slide":3,"id":"4","role":"header","text":"EDITORIAL SPINE","textPreview":"EDITORIAL SPINE","textChars":15,"textLines":1,"bbox":[64,34,430,24]}
+{"kind":"textbox","slide":3,"id":"5","role":"header","text":"03 / 06","textPreview":"03 / 06","textChars":7,"textLines":1,"bbox":[1114,34,104,24]}
+{"kind":"shape","slide":3,"id":"6","role":"header rule","shapeType":"rect","bbox":[64,64,1152,2]}
+{"kind":"shape","slide":3,"id":"7","role":"header marker","shapeType":"ellipse","bbox":[57,57,16,16]}
+{"kind":"textbox","slide":3,"id":"8","role":"title","text":"内容骨架决定这份博客能写多久","textPreview":"内容骨架决定这份博客能写多久","textChars":14,"textLines":1,"bbox":[64,86,760,142]}
+{"kind":"textbox","slide":3,"id":"9","role":"subtitle","text":"当前源码里已经写清楚了三条最适合长期更新的主线，每一条都兼顾经验、表达和可复用性。","textPreview":"当前源码里已经写清楚了三条最适合长期更新的主线，每一条都兼顾经验、表达和可复用性。","textChars":41,"textLines":1,"bbox":[66,234,720,70]}
+{"kind":"shape","slide":3,"id":"10","role":"card panel: AI 与科技","shapeType":"roundRect","bbox":[84,426,355.3333333333333,176]}
+{"kind":"shape","slide":3,"id":"11","role":"card accent: AI 与科技","shapeType":"rect","bbox":[84,426,8,176]}
+{"kind":"shape","slide":3,"id":"12","role":"icon badge","shapeType":"ellipse","bbox":[106,450,54,54]}
+{"kind":"shape","slide":3,"id":"13","role":"icon glyph","shapeType":"rect","bbox":[122,479,6,12]}
+{"kind":"shape","slide":3,"id":"14","role":"icon glyph","shapeType":"rect","bbox":[131,471,6,20]}
+{"kind":"shape","slide":3,"id":"15","role":"icon glyph","shapeType":"rect","bbox":[140,464,6,27]}
+{"kind":"textbox","slide":3,"id":"16","role":"card label","text":"AI 与科技","textPreview":"AI 与科技","textChars":6,"textLines":1,"bbox":[172,448,247.33333333333331,28]}
+{"kind":"textbox","slide":3,"id":"17","role":"card body: AI 与科技","text":"模型体验、工具评测、工作流尝试和趋势记录，适合持续输出高频观察。","textPreview":"模型体验、工具评测、工作流尝试和趋势记录，适合持续输出高频观察。","textChars":32,"textLines":1,"bbox":[108,512,307.3333333333333,68]}
+{"kind":"shape","slide":3,"id":"18","role":"card panel: 开发与产品","shapeType":"roundRect","bbox":[463.3333333333333,426,355.3333333333333,176]}
+{"kind":"shape","slide":3,"id":"19","role":"card accent: 开发与产品","shapeType":"rect","bbox":[463.3333333333333,426,8,176]}
+{"kind":"shape","slide":3,"id":"20","role":"icon badge","shapeType":"ellipse","bbox":[485.3333333333333,450,54,54]}
+{"kind":"shape","slide":3,"id":"21","role":"icon glyph","shapeType":"ellipse","bbox":[498.3333333333333,468,10,10]}
+{"kind":"shape","slide":3,"id":"22","role":"icon glyph","shapeType":"ellipse","bbox":[516.3333333333333,477,10,10]}
+{"kind":"shape","slide":3,"id":"23","role":"icon glyph","shapeType":"rect","bbox":[507.3333333333333,475,19,3]}
+{"kind":"textbox","slide":3,"id":"24","role":"card label","text":"开发与产品","textPreview":"开发与产品","textChars":5,"textLines":1,"bbox":[551.3333333333333,448,247.33333333333331,28]}
+{"kind":"textbox","slide":3,"id":"25","role":"card body: 开发与产品","text":"项目复盘、效率工具、网站搭建与独立作品迭代，让技术实践有稳定出口。","textPreview":"项目复盘、效率工具、网站搭建与独立作品迭代，让技术实践有稳定出口。","textChars":33,"textLines":1,"bbox":[487.3333333333333,512,307.3333333333333,68]}
+{"kind":"shape","slide":3,"id":"26","role":"card panel: 阅读与随笔","shapeType":"roundRect","bbox":[842.6666666666666,426,355.3333333333333,176]}
+{"kind":"shape","slide":3,"id":"27","role":"card accent: 阅读与随笔","shapeType":"rect","bbox":[842.6666666666666,426,8,176]}
+{"kind":"shape","slide":3,"id":"28","role":"icon badge","shapeType":"ellipse","bbox":[864.6666666666666,450,54,54]}
+{"kind":"shape","slide":3,"id":"29","role":"icon glyph","shapeType":"roundRect","bbox":[877.6666666666666,465,26,13]}
+{"kind":"shape","slide":3,"id":"30","role":"icon glyph","shapeType":"roundRect","bbox":[882.6666666666666,474,26,13]}
+{"kind":"shape","slide":3,"id":"31","role":"icon glyph","shapeType":"roundRect","bbox":[887.6666666666666,483,20,10]}
+{"kind":"textbox","slide":3,"id":"32","role":"card label","text":"阅读与随笔","textPreview":"阅读与随笔","textChars":5,"textLines":1,"bbox":[930.6666666666666,448,247.33333333333331,28]}
+{"kind":"textbox","slide":3,"id":"33","role":"card body: 阅读与随笔","text":"把零碎想法写成结构化文章，让内容从一次记录变成长期资产。","textPreview":"把零碎想法写成结构化文章，让内容从一次记录变成长期资产。","textChars":28,"textLines":1,"bbox":[866.6666666666666,512,307.3333333333333,68]}
+{"kind":"textbox","slide":3,"id":"34","role":"caption","text":"Larus Blog · April 2026","textPreview":"Larus Blog · April 2026","textChars":23,"textLines":1,"bbox":[64,674,260,22]}
+{"kind":"image","slide":4,"id":"2","role":"art plate","path":"D:\\AI\\astro-blog-cn\\tmp\\slides\\pro-reference-images\\slide-04.png","bbox":[0,0,1280,720]}
+{"kind":"shape","slide":4,"id":"3","role":"content contrast overlay","shapeType":"rect","bbox":[0,0,1280,720]}
+{"kind":"textbox","slide":4,"id":"4","role":"header","text":"FEATURE STORIES","textPreview":"FEATURE STORIES","textChars":15,"textLines":1,"bbox":[64,34,430,24]}
+{"kind":"textbox","slide":4,"id":"5","role":"header","text":"04 / 06","textPreview":"04 / 06","textChars":7,"textLines":1,"bbox":[1114,34,104,24]}
+{"kind":"shape","slide":4,"id":"6","role":"header rule","shapeType":"rect","bbox":[64,64,1152,2]}
+{"kind":"shape","slide":4,"id":"7","role":"header marker","shapeType":"ellipse","bbox":[57,57,16,16]}
+{"kind":"textbox","slide":4,"id":"8","role":"title","text":"三篇代表文章，已经能拉开内容张力","textPreview":"三篇代表文章，已经能拉开内容张力","textChars":16,"textLines":1,"bbox":[64,86,760,142]}
+{"kind":"textbox","slide":4,"id":"9","role":"subtitle","text":"它们分别对应 Agent 记忆、知识工作流和图像提示词实战，主题各异，但都围绕 AI 与创作效率展开。","textPreview":"它们分别对应 Agent 记忆、知识工作流和图像提示词实战，主题各异，但都围绕 AI 与创作效率展开。","textChars":51,"textLines":1,"bbox":[66,234,720,70]}
+{"kind":"shape","slide":4,"id":"10","role":"card panel: Hermes Agent","shapeType":"roundRect","bbox":[84,426,355.3333333333333,176]}
+{"kind":"shape","slide":4,"id":"11","role":"card accent: Hermes Agent","shapeType":"rect","bbox":[84,426,8,176]}
+{"kind":"shape","slide":4,"id":"12","role":"icon badge","shapeType":"ellipse","bbox":[106,450,54,54]}
+{"kind":"shape","slide":4,"id":"13","role":"icon glyph","shapeType":"rect","bbox":[122,479,6,12]}
+{"kind":"shape","slide":4,"id":"14","role":"icon glyph","shapeType":"rect","bbox":[131,471,6,20]}
+{"kind":"shape","slide":4,"id":"15","role":"icon glyph","shapeType":"rect","bbox":[140,464,6,27]}
+{"kind":"textbox","slide":4,"id":"16","role":"card label","text":"Hermes Agent","textPreview":"Hermes Agent","textChars":12,"textLines":1,"bbox":[172,448,247.33333333333331,28]}
+{"kind":"textbox","slide":4,"id":"17","role":"card body: Hermes Agent","text":"拆解长期记忆系统为什么常被误解，并把配置方法、文件职责和任务\ncheckpoint 讲清楚。","textPreview":"拆解长期记忆系统为什么常被误解，并把配置方法、文件职责和任务 | checkpoint 讲清楚。","textChars":46,"textLines":2,"bbox":[108,512,307.3333333333333,68]}
+{"kind":"shape","slide":4,"id":"18","role":"card panel: Obsidian + AI","shapeType":"roundRect","bbox":[463.3333333333333,426,355.3333333333333,176]}
+{"kind":"shape","slide":4,"id":"19","role":"card accent: Obsidian + AI","shapeType":"rect","bbox":[463.3333333333333,426,8,176]}
+{"kind":"shape","slide":4,"id":"20","role":"icon badge","shapeType":"ellipse","bbox":[485.3333333333333,450,54,54]}
+{"kind":"shape","slide":4,"id":"21","role":"icon glyph","shapeType":"ellipse","bbox":[498.3333333333333,468,10,10]}
+{"kind":"shape","slide":4,"id":"22","role":"icon glyph","shapeType":"ellipse","bbox":[516.3333333333333,477,10,10]}
+{"kind":"shape","slide":4,"id":"23","role":"icon glyph","shapeType":"rect","bbox":[507.3333333333333,475,19,3]}
+{"kind":"textbox","slide":4,"id":"24","role":"card label","text":"Obsidian + AI","textPreview":"Obsidian + AI","textChars":13,"textLines":1,"bbox":[551.3333333333333,448,247.33333333333331,28]}
+{"kind":"textbox","slide":4,"id":"25","role":"card body: Obsidian + AI","text":"不追求把 8\n个自动化工作流一次做完，而是先挑高频、重复式环节落地。","textPreview":"不追求把 8 | 个自动化工作流一次做完，而是先挑高频、重复式环节落地。","textChars":34,"textLines":2,"bbox":[487.3333333333333,512,307.3333333333333,68]}
+{"kind":"shape","slide":4,"id":"26","role":"card panel: GPT-Image-2","shapeType":"roundRect","bbox":[842.6666666666666,426,355.3333333333333,176]}
+{"kind":"shape","slide":4,"id":"27","role":"card accent: GPT-Image-2","shapeType":"rect","bbox":[842.6666666666666,426,8,176]}
+{"kind":"shape","slide":4,"id":"28","role":"icon badge","shapeType":"ellipse","bbox":[864.6666666666666,450,54,54]}
+{"kind":"shape","slide":4,"id":"29","role":"icon glyph","shapeType":"roundRect","bbox":[877.6666666666666,465,26,13]}
+{"kind":"shape","slide":4,"id":"30","role":"icon glyph","shapeType":"roundRect","bbox":[882.6666666666666,474,26,13]}
+{"kind":"shape","slide":4,"id":"31","role":"icon glyph","shapeType":"roundRect","bbox":[887.6666666666666,483,20,10]}
+{"kind":"textbox","slide":4,"id":"32","role":"card label","text":"GPT-Image-2","textPreview":"GPT-Image-2","textChars":11,"textLines":1,"bbox":[930.6666666666666,448,247.33333333333331,28]}
+{"kind":"textbox","slide":4,"id":"33","role":"card body: GPT-Image-2","text":"从 9:16\n韩系人像案例切入，解释构图、光线、材质和情绪如何共同决定成片气质。","textPreview":"从 9:16 | 韩系人像案例切入，解释构图、光线、材质和情绪如何共同决定成片气质。","textChars":40,"textLines":2,"bbox":[866.6666666666666,512,307.3333333333333,68]}
+{"kind":"textbox","slide":4,"id":"34","role":"caption","text":"Larus Blog · April 2026","textPreview":"Larus Blog · April 2026","textChars":23,"textLines":1,"bbox":[64,674,260,22]}
+{"kind":"image","slide":5,"id":"2","role":"art plate","path":"D:\\AI\\astro-blog-cn\\tmp\\slides\\pro-reference-images\\slide-05.png","bbox":[0,0,1280,720]}
+{"kind":"shape","slide":5,"id":"3","role":"metrics contrast overlay","shapeType":"rect","bbox":[0,0,1280,720]}
+{"kind":"textbox","slide":5,"id":"4","role":"header","text":"DENSITY & RANGE","textPreview":"DENSITY & RANGE","textChars":15,"textLines":1,"bbox":[64,34,430,24]}
+{"kind":"textbox","slide":5,"id":"5","role":"header","text":"05 / 06","textPreview":"05 / 06","textChars":7,"textLines":1,"bbox":[1114,34,104,24]}
+{"kind":"shape","slide":5,"id":"6","role":"header rule","shapeType":"rect","bbox":[64,64,1152,2]}
+{"kind":"shape","slide":5,"id":"7","role":"header marker","shapeType":"ellipse","bbox":[57,57,16,16]}
+{"kind":"textbox","slide":5,"id":"8","role":"title","text":"从编辑视角看，它已经有了主题密度","textPreview":"从编辑视角看，它已经有了主题密度","textChars":16,"textLines":1,"bbox":[64,86,700,142]}
+{"kind":"textbox","slide":5,"id":"9","role":"subtitle","text":"虽然文章数量还不多，但主题集中、标签分布清晰，而且发布时间密集，适合继续做厚。","textPreview":"虽然文章数量还不多，但主题集中、标签分布清晰，而且发布时间密集，适合继续做厚。","textChars":39,"textLines":1,"bbox":[66,234,700,70]}
+{"kind":"shape","slide":5,"id":"10","role":"metric panel: AI 主题占比","shapeType":"roundRect","bbox":[92,404,330,174]}
+{"kind":"shape","slide":5,"id":"11","role":"metric accent: AI 主题占比","shapeType":"rect","bbox":[92,404,330,7]}
+{"kind":"textbox","slide":5,"id":"12","role":"metric value","text":"75%","textPreview":"75%","textChars":3,"textLines":1,"bbox":[114,428,286,54]}
+{"kind":"textbox","slide":5,"id":"13","role":"metric label","text":"AI 主题占比","textPreview":"AI 主题占比","textChars":7,"textLines":1,"bbox":[116,486,282,38]}
+{"kind":"textbox","slide":5,"id":"14","role":"metric note","text":"4 篇里有 3 篇属于 AI 与科技","textPreview":"4 篇里有 3 篇属于 AI 与科技","textChars":18,"textLines":1,"bbox":[116,536,282,22]}
+{"kind":"shape","slide":5,"id":"15","role":"metric panel: 已出现标签","shapeType":"roundRect","bbox":[462,404,330,174]}
+{"kind":"shape","slide":5,"id":"16","role":"metric accent: 已出现标签","shapeType":"rect","bbox":[462,404,330,7]}
+{"kind":"textbox","slide":5,"id":"17","role":"metric value","text":"18","textPreview":"18","textChars":2,"textLines":1,"bbox":[484,428,286,54]}
+{"kind":"textbox","slide":5,"id":"18","role":"metric label","text":"已出现标签","textPreview":"已出现标签","textChars":5,"textLines":1,"bbox":[486,486,282,38]}
+{"kind":"textbox","slide":5,"id":"19","role":"metric note","text":"覆盖 Agent、Obsidian、Prompt 等不同切口","textPreview":"覆盖 Agent、Obsidian、Prompt 等不同切口","textChars":30,"textLines":1,"bbox":[486,536,282,22]}
+{"kind":"shape","slide":5,"id":"20","role":"metric panel: 起步节奏","shapeType":"roundRect","bbox":[832,404,330,174]}
+{"kind":"shape","slide":5,"id":"21","role":"metric accent: 起步节奏","shapeType":"rect","bbox":[832,404,330,7]}
+{"kind":"textbox","slide":5,"id":"22","role":"metric value","text":"2026.04","textPreview":"2026.04","textChars":7,"textLines":1,"bbox":[854,428,286,54]}
+{"kind":"textbox","slide":5,"id":"23","role":"metric label","text":"起步节奏","textPreview":"起步节奏","textChars":4,"textLines":1,"bbox":[856,486,282,38]}
+{"kind":"textbox","slide":5,"id":"24","role":"metric note","text":"核心文章集中发布于同一轮建站周期","textPreview":"核心文章集中发布于同一轮建站周期","textChars":16,"textLines":1,"bbox":[856,536,282,22]}
+{"kind":"textbox","slide":5,"id":"25","role":"caption","text":"Larus Blog · April 2026","textPreview":"Larus Blog · April 2026","textChars":23,"textLines":1,"bbox":[64,674,260,22]}
+{"kind":"image","slide":6,"id":"2","role":"art plate","path":"D:\\AI\\astro-blog-cn\\tmp\\slides\\pro-reference-images\\slide-06.png","bbox":[0,0,1280,720]}
+{"kind":"shape","slide":6,"id":"3","role":"content contrast overlay","shapeType":"rect","bbox":[0,0,1280,720]}
+{"kind":"textbox","slide":6,"id":"4","role":"header","text":"NEXT ISSUE","textPreview":"NEXT ISSUE","textChars":10,"textLines":1,"bbox":[64,34,430,24]}
+{"kind":"textbox","slide":6,"id":"5","role":"header","text":"06 / 06","textPreview":"06 / 06","textChars":7,"textLines":1,"bbox":[1114,34,104,24]}
+{"kind":"shape","slide":6,"id":"6","role":"header rule","shapeType":"rect","bbox":[64,64,1152,2]}
+{"kind":"shape","slide":6,"id":"7","role":"header marker","shapeType":"ellipse","bbox":[57,57,16,16]}
+{"kind":"textbox","slide":6,"id":"8","role":"title","text":"下一步，不是做得更花，而是把刊物感继续做厚","textPreview":"下一步，不是做得更花，而是把刊物感继续做厚","textChars":21,"textLines":1,"bbox":[64,86,760,142]}
+{"kind":"textbox","slide":6,"id":"9","role":"subtitle","text":"项目里已经写出了最值得先做的方向，接下来更重要的是延续节奏，而不是一次性加满所有功能。","textPreview":"项目里已经写出了最值得先做的方向，接下来更重要的是延续节奏，而不是一次性加满所有功能。","textChars":43,"textLines":1,"bbox":[66,234,720,70]}
+{"kind":"shape","slide":6,"id":"10","role":"card panel: 先替换站点信息","shapeType":"roundRect","bbox":[84,426,355.3333333333333,176]}
+{"kind":"shape","slide":6,"id":"11","role":"card accent: 先替换站点信息","shapeType":"rect","bbox":[84,426,8,176]}
+{"kind":"shape","slide":6,"id":"12","role":"icon badge","shapeType":"ellipse","bbox":[106,450,54,54]}
+{"kind":"shape","slide":6,"id":"13","role":"icon glyph","shapeType":"rect","bbox":[122,479,6,12]}
+{"kind":"shape","slide":6,"id":"14","role":"icon glyph","shapeType":"rect","bbox":[131,471,6,20]}
+{"kind":"shape","slide":6,"id":"15","role":"icon glyph","shapeType":"rect","bbox":[140,464,6,27]}
+{"kind":"textbox","slide":6,"id":"16","role":"card label","text":"先替换站点信息","textPreview":"先替换站点信息","textChars":7,"textLines":1,"bbox":[172,448,247.33333333333331,28]}
+{"kind":"textbox","slide":6,"id":"17","role":"card body: 先替换站点信息","text":"把标题、描述、作者与邮箱统一成真实身份，让整份出版物先拥有明确署名。","textPreview":"把标题、描述、作者与邮箱统一成真实身份，让整份出版物先拥有明确署名。","textChars":34,"textLines":1,"bbox":[108,512,307.3333333333333,68]}
+{"kind":"shape","slide":6,"id":"18","role":"card panel: 继续写轻量文章","shapeType":"roundRect","bbox":[463.3333333333333,426,355.3333333333333,176]}
+{"kind":"shape","slide":6,"id":"19","role":"card accent: 继续写轻量文章","shapeType":"rect","bbox":[463.3333333333333,426,8,176]}
+{"kind":"shape","slide":6,"id":"20","role":"icon badge","shapeType":"ellipse","bbox":[485.3333333333333,450,54,54]}
+{"kind":"shape","slide":6,"id":"21","role":"icon glyph","shapeType":"ellipse","bbox":[498.3333333333333,468,10,10]}
+{"kind":"shape","slide":6,"id":"22","role":"icon glyph","shapeType":"ellipse","bbox":[516.3333333333333,477,10,10]}
+{"kind":"shape","slide":6,"id":"23","role":"icon glyph","shapeType":"rect","bbox":[507.3333333333333,475,19,3]}
+{"kind":"textbox","slide":6,"id":"24","role":"card label","text":"继续写轻量文章","textPreview":"继续写轻量文章","textChars":7,"textLines":1,"bbox":[551.3333333333333,448,247.33333333333331,28]}
+{"kind":"textbox","slide":6,"id":"25","role":"card body: 继续写轻量文章","text":"优先更新工具评测、开发复盘和清单型内容，用更低阻力换来更稳定的更新频率。","textPreview":"优先更新工具评测、开发复盘和清单型内容，用更低阻力换来更稳定的更新频率。","textChars":36,"textLines":1,"bbox":[487.3333333333333,512,307.3333333333333,68]}
+{"kind":"shape","slide":6,"id":"26","role":"card panel: 等内容过 10 篇再扩展","shapeType":"roundRect","bbox":[842.6666666666666,426,355.3333333333333,176]}
+{"kind":"shape","slide":6,"id":"27","role":"card accent: 等内容过 10 篇再扩展","shapeType":"rect","bbox":[842.6666666666666,426,8,176]}
+{"kind":"shape","slide":6,"id":"28","role":"icon badge","shapeType":"ellipse","bbox":[864.6666666666666,450,54,54]}
+{"kind":"shape","slide":6,"id":"29","role":"icon glyph","shapeType":"roundRect","bbox":[877.6666666666666,465,26,13]}
+{"kind":"shape","slide":6,"id":"30","role":"icon glyph","shapeType":"roundRect","bbox":[882.6666666666666,474,26,13]}
+{"kind":"shape","slide":6,"id":"31","role":"icon glyph","shapeType":"roundRect","bbox":[887.6666666666666,483,20,10]}
+{"kind":"textbox","slide":6,"id":"32","role":"card label","text":"等内容过 10 篇再扩展","textPreview":"等内容过 10 篇再扩展","textChars":12,"textLines":1,"bbox":[930.6666666666666,448,247.33333333333331,28]}
+{"kind":"textbox","slide":6,"id":"33","role":"card body: 等内容过 10 篇再扩展","text":"标签页、归档页、搜索和评论都可以后置，先把内容厚度做出来更划算。","textPreview":"标签页、归档页、搜索和评论都可以后置，先把内容厚度做出来更划算。","textChars":32,"textLines":1,"bbox":[866.6666666666666,512,307.3333333333333,68]}
+{"kind":"textbox","slide":6,"id":"34","role":"caption","text":"Larus Blog · April 2026","textPreview":"Larus Blog · April 2026","textChars":23,"textLines":1,"bbox":[64,674,260,22]}

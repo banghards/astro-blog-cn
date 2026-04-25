@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <rect width="1200" height="900" fill="#F7F2E9"/>
+  <text x="80" y="110" font-size="58" font-family="Georgia, 'Times New Roman', serif" font-weight="700" fill="#111111">Agent、Skills、Harness 怎么配合？</text>
+  <g transform="translate(80 190)">
+    <rect x="0" y="0" width="300" height="510" rx="24" fill="#FFF9F1" stroke="#111111" stroke-width="3"/>
+    <circle cx="150" cy="150" r="74" fill="#E8DED0" stroke="#111111" stroke-width="3"/>
+    <path d="M110 150 C110 112, 190 112, 190 150 C190 188, 110 188, 110 150" fill="none" stroke="#C74A2C" stroke-width="6"/>
+    <text x="36" y="285" font-size="44" font-family="'Microsoft YaHei', sans-serif" font-weight="700" fill="#111111">Agent</text>
+    <text x="36" y="338" font-size="28" font-family="'Microsoft YaHei', sans-serif" fill="#333333">理解目标</text>
+    <text x="36" y="382" font-size="28" font-family="'Microsoft YaHei', sans-serif" fill="#333333">决定步骤</text>
+    <text x="36" y="426" font-size="28" font-family="'Microsoft YaHei', sans-serif" fill="#333333">调用工具</text>
+    <text x="36" y="470" font-size="28" font-family="'Microsoft YaHei', sans-serif" fill="#333333">根据结果继续推进</text>
+  </g>
+  <g transform="translate(450 190)">
+    <rect x="0" y="0" width="300" height="510" rx="24" fill="#FFF9F1" stroke="#111111" stroke-width="3"/>
+    <rect x="70" y="92" width="160" height="98" rx="18" fill="#E8DED0" stroke="#111111" stroke-width="3"/>
+    <rect x="95" y="65" width="110" height="36" rx="10" fill="#C74A2C"/>
+    <text x="36" y="285" font-size="44" font-family="'Microsoft YaHei', sans-serif" font-weight="700" fill="#111111">Skills</text>
+    <text x="36" y="338" font-size="28" font-family="'Microsoft YaHei', sans-serif" fill="#333333">可复用的方法</text>
+    <text x="36" y="382" font-size="28" font-family="'Microsoft YaHei', sans-serif" fill="#333333">结构化的动作</text>
+    <text x="36" y="426" font-size="28" font-family="'Microsoft YaHei', sans-serif" fill="#333333">降低随机性</text>
+    <text x="36" y="470" font-size="28" font-family="'Microsoft YaHei', sans-serif" fill="#333333">沉淀团队经验</text>
+  </g>
+  <g transform="translate(820 190)">
+    <rect x="0" y="0" width="300" height="510" rx="24" fill="#FFF9F1" stroke="#111111" stroke-width="3"/>
+    <rect x="56" y="74" width="188" height="138" rx="20" fill="none" stroke="#111111" stroke-width="4"/>
+    <rect x="82" y="100" width="136" height="22" rx="8" fill="#C74A2C"/>
+    <rect x="82" y="136" width="136" height="22" rx="8" fill="#111111"/>
+    <rect x="82" y="172" width="92" height="22" rx="8" fill="#B9A894"/>
+    <text x="36" y="285" font-size="44" font-family="'Microsoft YaHei', sans-serif" font-weight="700" fill="#111111">Harness</text>
+    <text x="36" y="338" font-size="28" font-family="'Microsoft YaHei', sans-serif" fill="#333333">执行环境</text>
+    <text x="36" y="382" font-size="28" font-family="'Microsoft YaHei', sans-serif" fill="#333333">上下文与边界</text>
+    <text x="36" y="426" font-size="28" font-family="'Microsoft YaHei', sans-serif" fill="#333333">工具接入与调度</text>
+    <text x="36" y="470" font-size="28" font-family="'Microsoft YaHei', sans-serif" fill="#333333">把系统真正跑起来</text>
+  </g>
+  <path d="M380 446 C418 446, 422 446, 450 446" stroke="#111111" stroke-width="4" fill="none"/>
+  <polygon points="450,446 434,438 434,454" fill="#111111"/>
+  <path d="M750 446 C788 446, 792 446, 820 446" stroke="#111111" stroke-width="4" fill="none"/>
+  <polygon points="820,446 804,438 804,454" fill="#111111"/>
+</svg>

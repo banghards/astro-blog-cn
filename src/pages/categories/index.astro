@@ -28,7 +28,7 @@ const categories = groupPostsBy(await getPublishedPosts(), 'category');
 						<a class="taxonomy-card" href={getCategoryHref(category.name)}>
 							<div>
 								<h2>{category.name}</h2>
-								<p>{category.posts[0]?.data.description}</p>
+								<p>{category.posts[0]?.data.description ?? '这里收纳同一主题下的文章。'}</p>
 							</div>
 							<span>{category.count} 篇</span>
 						</a>
