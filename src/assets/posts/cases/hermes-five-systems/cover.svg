@@ -1,0 +1,39 @@
+<svg width="1800" height="800" viewBox="0 0 1800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1800" height="800" fill="#F6F1E8"/>
+  <rect x="70" y="60" width="1660" height="680" rx="34" fill="#FFF9F0" stroke="#1F2A44" stroke-width="4"/>
+  <circle cx="1490" cy="150" r="120" fill="#D85A3F" fill-opacity="0.14"/>
+  <circle cx="310" cy="640" r="150" fill="#1C5C56" fill-opacity="0.12"/>
+  <text x="120" y="170" fill="#1F2A44" font-size="68" font-family="Georgia, 'Noto Serif SC', serif" font-weight="700">装完 Hermes 后</text>
+  <text x="120" y="250" fill="#1F2A44" font-size="68" font-family="Georgia, 'Noto Serif SC', serif" font-weight="700">真正决定体验的，是后面这 5 套系统</text>
+  <text x="123" y="320" fill="#5D6475" font-size="28" font-family="'Segoe UI', 'PingFang SC', sans-serif">不是再找一个神 prompt，而是把记忆、工具、模型、入口、运行层放对位置。</text>
+
+  <rect x="110" y="420" width="290" height="170" rx="22" fill="#163D5B"/>
+  <text x="140" y="480" fill="#F6F1E8" font-size="26" font-family="'Segoe UI', 'PingFang SC', sans-serif" font-weight="700">身份与记忆</text>
+  <text x="140" y="525" fill="#DDE7EF" font-size="22" font-family="'Segoe UI', 'PingFang SC', sans-serif">USER.md</text>
+  <text x="140" y="558" fill="#DDE7EF" font-size="22" font-family="'Segoe UI', 'PingFang SC', sans-serif">MEMORY.md</text>
+
+  <rect x="435" y="390" width="290" height="170" rx="22" fill="#1C5C56"/>
+  <text x="465" y="450" fill="#F6F1E8" font-size="26" font-family="'Segoe UI', 'PingFang SC', sans-serif" font-weight="700">感知与抓取</text>
+  <text x="465" y="495" fill="#DDEEEB" font-size="22" font-family="'Segoe UI', 'PingFang SC', sans-serif">web-fetch</text>
+  <text x="465" y="528" fill="#DDEEEB" font-size="22" font-family="'Segoe UI', 'PingFang SC', sans-serif">search / docs</text>
+
+  <rect x="760" y="360" width="290" height="170" rx="22" fill="#A43F31"/>
+  <text x="790" y="420" fill="#FFF4EE" font-size="26" font-family="'Segoe UI', 'PingFang SC', sans-serif" font-weight="700">模型与调用</text>
+  <text x="790" y="465" fill="#FFE3D9" font-size="22" font-family="'Segoe UI', 'PingFang SC', sans-serif">provider.yaml</text>
+  <text x="790" y="498" fill="#FFE3D9" font-size="22" font-family="'Segoe UI', 'PingFang SC', sans-serif">API keys</text>
+
+  <rect x="1085" y="390" width="290" height="170" rx="22" fill="#C88C2A"/>
+  <text x="1115" y="450" fill="#FFF8E7" font-size="26" font-family="'Segoe UI', 'PingFang SC', sans-serif" font-weight="700">入口与连接</text>
+  <text x="1115" y="495" fill="#FFF0C8" font-size="22" font-family="'Segoe UI', 'PingFang SC', sans-serif">wechat gateway</text>
+  <text x="1115" y="528" fill="#FFF0C8" font-size="22" font-family="'Segoe UI', 'PingFang SC', sans-serif">sessions / webhook</text>
+
+  <rect x="1410" y="420" width="290" height="170" rx="22" fill="#1F2A44"/>
+  <text x="1440" y="480" fill="#F2EEE7" font-size="26" font-family="'Segoe UI', 'PingFang SC', sans-serif" font-weight="700">运行与隔离</text>
+  <text x="1440" y="525" fill="#D7DCE7" font-size="22" font-family="'Segoe UI', 'PingFang SC', sans-serif">venv / logs / tmp</text>
+  <text x="1440" y="558" fill="#D7DCE7" font-size="22" font-family="'Segoe UI', 'PingFang SC', sans-serif">独立 runtime</text>
+
+  <path d="M401 505H432" stroke="#1F2A44" stroke-width="5" stroke-linecap="round"/>
+  <path d="M726 475H757" stroke="#1F2A44" stroke-width="5" stroke-linecap="round"/>
+  <path d="M1051 475H1082" stroke="#1F2A44" stroke-width="5" stroke-linecap="round"/>
+  <path d="M1376 505H1407" stroke="#1F2A44" stroke-width="5" stroke-linecap="round"/>
+</svg>

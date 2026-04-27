@@ -1,0 +1,33 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" fill="#FBF7F0"/>
+  <text x="82" y="108" fill="#1F2A44" font-size="46" font-family="Georgia, 'Noto Serif SC', serif" font-weight="700">入口层和运行层要分家</text>
+  <text x="82" y="154" fill="#667085" font-size="22" font-family="'Segoe UI', 'PingFang SC', sans-serif">微信是入口，Hermes 是核心，runtime 是底座。三者混在一起，后面最容易炸。</text>
+
+  <rect x="90" y="270" width="200" height="110" rx="20" fill="#C88C2A"/>
+  <text x="145" y="335" fill="#FFF8E7" font-size="30" font-family="'Segoe UI', 'PingFang SC', sans-serif" font-weight="700">用户</text>
+
+  <rect x="360" y="240" width="250" height="170" rx="24" fill="#A43F31"/>
+  <text x="398" y="300" fill="#FFF2EC" font-size="30" font-family="'Segoe UI', 'PingFang SC', sans-serif" font-weight="700">微信入口层</text>
+  <text x="398" y="340" fill="#FFE3D9" font-size="22" font-family="'Segoe UI', 'PingFang SC', sans-serif">~/hermes-gateways/wechat/</text>
+  <text x="398" y="373" fill="#FFE3D9" font-size="22" font-family="'Segoe UI', 'PingFang SC', sans-serif">app.py / .env / sessions</text>
+
+  <rect x="680" y="220" width="430" height="210" rx="24" fill="#163D5B"/>
+  <text x="720" y="285" fill="#F6F1E8" font-size="30" font-family="'Segoe UI', 'PingFang SC', sans-serif" font-weight="700">Hermes 核心层</text>
+  <text x="720" y="325" fill="#DDE7EF" font-size="22" font-family="'Segoe UI', 'PingFang SC', sans-serif">~/.hermes/memories/</text>
+  <text x="720" y="358" fill="#DDE7EF" font-size="22" font-family="'Segoe UI', 'PingFang SC', sans-serif">~/.hermes/providers/</text>
+  <text x="720" y="391" fill="#DDE7EF" font-size="22" font-family="'Segoe UI', 'PingFang SC', sans-serif">profiles / gateways / configs</text>
+
+  <rect x="360" y="560" width="750" height="180" rx="24" fill="#1F2A44"/>
+  <text x="400" y="625" fill="#F4EFE9" font-size="30" font-family="'Segoe UI', 'PingFang SC', sans-serif" font-weight="700">运行与隔离层</text>
+  <text x="400" y="665" fill="#D7DCE7" font-size="24" font-family="'Segoe UI', 'PingFang SC', sans-serif">~/hermes-runtime/venv</text>
+  <text x="400" y="700" fill="#D7DCE7" font-size="24" font-family="'Segoe UI', 'PingFang SC', sans-serif">logs / tmp / container / scheduler</text>
+
+  <path d="M290 325H360" stroke="#1F2A44" stroke-width="5" stroke-linecap="round"/>
+  <path d="M610 325H680" stroke="#1F2A44" stroke-width="5" stroke-linecap="round"/>
+  <path d="M795 430V560" stroke="#1F2A44" stroke-width="5" stroke-dasharray="10 10"/>
+
+  <rect x="90" y="560" width="200" height="180" rx="24" fill="#F4E9DC" stroke="#A43F31" stroke-width="3"/>
+  <text x="122" y="620" fill="#A43F31" font-size="28" font-family="'Segoe UI', 'PingFang SC', sans-serif" font-weight="700">不要这样做</text>
+  <text x="122" y="665" fill="#475467" font-size="22" font-family="'Segoe UI', 'PingFang SC', sans-serif">把微信逻辑</text>
+  <text x="122" y="697" fill="#475467" font-size="22" font-family="'Segoe UI', 'PingFang SC', sans-serif">直接塞进主环境</text>
+</svg>
