@@ -1,31 +1,32 @@
 <svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
   <rect width="1200" height="900" fill="#FBF7F0"/>
-  <text x="82" y="105" fill="#1F2A44" font-size="46" font-family="Georgia, 'Noto Serif SC', serif" font-weight="700">记忆层到底该怎么放</text>
-  <text x="82" y="150" fill="#667085" font-size="22" font-family="'Segoe UI', 'PingFang SC', sans-serif">全局记忆、工作记忆、项目规则分开，Hermes 才不会越用越乱。</text>
+  <circle cx="214" cy="132" r="88" fill="#215E59" fill-opacity="0.10"/>
+  <text x="82" y="106" fill="#1F2A44" font-size="48" font-family="Georgia, 'Noto Serif SC', serif" font-weight="700">记忆层该怎么放，决定 Hermes 会不会越用越乱</text>
+  <text x="82" y="152" fill="#667085" font-size="22" font-family="'Segoe UI', 'PingFang SC', sans-serif">这张图不是在讲抽象概念，而是在帮你区分：什么属于你，什么属于项目。</text>
 
-  <rect x="70" y="210" width="470" height="560" rx="28" fill="#FFF9F0" stroke="#163D5B" stroke-width="4"/>
-  <text x="105" y="270" fill="#163D5B" font-size="30" font-family="'Segoe UI', 'PingFang SC', sans-serif" font-weight="700">用户 / 全局层</text>
-  <text x="105" y="312" fill="#506178" font-size="22" font-family="'Segoe UI', 'PingFang SC', sans-serif">和“你这个人”有关</text>
-  <rect x="105" y="355" width="400" height="100" rx="18" fill="#163D5B"/>
-  <text x="135" y="414" fill="#F6F1E8" font-size="28" font-family="'Segoe UI', 'PingFang SC', sans-serif">~/.hermes/memories/USER.md</text>
-  <rect x="105" y="485" width="400" height="100" rx="18" fill="#1C5C56"/>
-  <text x="135" y="544" fill="#F6F1E8" font-size="28" font-family="'Segoe UI', 'PingFang SC', sans-serif">~/.hermes/memories/MEMORY.md</text>
-  <rect x="105" y="615" width="400" height="100" rx="18" fill="#C88C2A"/>
-  <text x="135" y="674" fill="#FFF8E7" font-size="28" font-family="'Segoe UI', 'PingFang SC', sans-serif">~/.hermes/profiles/*</text>
+  <rect x="72" y="218" width="476" height="596" rx="30" fill="#FCF8F1" stroke="#163D5B" stroke-width="4"/>
+  <text x="108" y="276" fill="#163D5B" font-size="31" font-family="'Segoe UI', 'PingFang SC', sans-serif" font-weight="700">用户 / 全局记忆</text>
+  <text x="108" y="316" fill="#607189" font-size="22" font-family="'Segoe UI', 'PingFang SC', sans-serif">和“你是谁”有关，跟某个单独项目无关</text>
+  <rect x="108" y="364" width="404" height="106" rx="20" fill="#173A5F"/>
+  <text x="138" y="426" fill="#F5F0E9" font-size="30" font-family="'Segoe UI', 'PingFang SC', sans-serif">~/.hermes/memories/USER.md</text>
+  <rect x="108" y="498" width="404" height="106" rx="20" fill="#2A6B64"/>
+  <text x="138" y="560" fill="#F5F0E9" font-size="30" font-family="'Segoe UI', 'PingFang SC', sans-serif">~/.hermes/memories/MEMORY.md</text>
+  <rect x="108" y="632" width="404" height="106" rx="20" fill="#C88C2A"/>
+  <text x="138" y="694" fill="#FFF8E7" font-size="30" font-family="'Segoe UI', 'PingFang SC', sans-serif">~/.hermes/profiles/*</text>
 
-  <rect x="660" y="210" width="470" height="560" rx="28" fill="#FFF9F0" stroke="#A43F31" stroke-width="4"/>
-  <text x="695" y="270" fill="#A43F31" font-size="30" font-family="'Segoe UI', 'PingFang SC', sans-serif" font-weight="700">项目层</text>
-  <text x="695" y="312" fill="#7F5853" font-size="22" font-family="'Segoe UI', 'PingFang SC', sans-serif">和当前仓库、当前工程有关</text>
-  <rect x="695" y="355" width="400" height="120" rx="18" fill="#A43F31"/>
-  <text x="725" y="415" fill="#FFF2EC" font-size="28" font-family="'Segoe UI', 'PingFang SC', sans-serif">&lt;project-root&gt;/AGENTS.md</text>
-  <text x="725" y="450" fill="#FFE3D9" font-size="22" font-family="'Segoe UI', 'PingFang SC', sans-serif">技术栈 / 命令 / 团队规则</text>
+  <rect x="654" y="218" width="474" height="596" rx="30" fill="#FCF8F1" stroke="#A44C3E" stroke-width="4"/>
+  <text x="690" y="276" fill="#A44C3E" font-size="31" font-family="'Segoe UI', 'PingFang SC', sans-serif" font-weight="700">项目 / 仓库规则</text>
+  <text x="690" y="316" fill="#7D5A56" font-size="22" font-family="'Segoe UI', 'PingFang SC', sans-serif">只对当前工程生效，不该污染所有 Hermes 会话</text>
+  <rect x="690" y="364" width="402" height="126" rx="20" fill="#A44C3E"/>
+  <text x="720" y="430" fill="#FFF2EC" font-size="31" font-family="'Segoe UI', 'PingFang SC', sans-serif">&lt;project-root&gt;/AGENTS.md</text>
+  <text x="720" y="468" fill="#FFDCD0" font-size="22" font-family="'Segoe UI', 'PingFang SC', sans-serif">技术栈 / 命令 / 不能碰的目录 / 团队规则</text>
+  <rect x="690" y="532" width="402" height="170" rx="20" fill="#F4E9DC" stroke="#A44C3E" stroke-width="2"/>
+  <text x="720" y="586" fill="#1F2A44" font-size="28" font-family="'Segoe UI', 'PingFang SC', sans-serif" font-weight="700">最常见的错误</text>
+  <text x="720" y="630" fill="#475467" font-size="22" font-family="'Segoe UI', 'PingFang SC', sans-serif">把项目规则写进全局记忆</text>
+  <text x="720" y="662" fill="#475467" font-size="22" font-family="'Segoe UI', 'PingFang SC', sans-serif">把临时进度写成长期事实</text>
 
-  <rect x="695" y="520" width="400" height="150" rx="18" fill="#F4E9DC" stroke="#A43F31" stroke-width="2"/>
-  <text x="725" y="575" fill="#1F2A44" font-size="26" font-family="'Segoe UI', 'PingFang SC', sans-serif" font-weight="700">不要混放</text>
-  <text x="725" y="618" fill="#475467" font-size="22" font-family="'Segoe UI', 'PingFang SC', sans-serif">项目规则不要写进全局记忆</text>
-  <text x="725" y="650" fill="#475467" font-size="22" font-family="'Segoe UI', 'PingFang SC', sans-serif">临时进度也不要污染长期记忆</text>
-
-  <path d="M540 490H660" stroke="#1F2A44" stroke-width="4" stroke-dasharray="10 10"/>
-  <circle cx="600" cy="490" r="26" fill="#FFF9F0" stroke="#1F2A44" stroke-width="4"/>
-  <text x="583" y="500" fill="#1F2A44" font-size="24" font-family="'Segoe UI', sans-serif" font-weight="700">≠</text>
+  <circle cx="600" cy="515" r="28" fill="#FCF8F1" stroke="#1F2A44" stroke-width="4"/>
+  <text x="582" y="526" fill="#1F2A44" font-size="26" font-family="'Segoe UI', sans-serif" font-weight="700">≠</text>
+  <path d="M548 515H572" stroke="#1F2A44" stroke-width="4" stroke-dasharray="8 8"/>
+  <path d="M628 515H652" stroke="#1F2A44" stroke-width="4" stroke-dasharray="8 8"/>
 </svg>
