@@ -20,7 +20,31 @@ if ([string]::IsNullOrWhiteSpace(($pending -join "").Trim())) {
 git status --short
 
 Write-Host "==> Staging changes"
-git add -A
+$pathsToStage = @(
+  ".gitignore",
+  "README.md",
+  "astro.config.mjs",
+  "package.json",
+  "package-lock.json",
+  "tsconfig.json",
+  "src",
+  "public",
+  "scripts",
+  "tools"
+)
+
+$existingPaths = $pathsToStage | Where-Object { Test-Path $_ }
+if ($existingPaths.Count -eq 0) {
+  throw "No publishable paths were found to stage."
+}
+
+git add -- $existingPaths
+
+$staged = git diff --cached --name-only
+if ([string]::IsNullOrWhiteSpace(($staged -join "").Trim())) {
+  Write-Host "No publishable changes were staged. Generated outputs remain untracked."
+  exit 0
+}
 
 Write-Host "==> Creating commit"
 git commit -m $message

@@ -22,6 +22,12 @@ pnpm-debug.log*
 # local deployment metadata
 .vercel/
 
+# local generated content/output
+outputs/
+social-output/
+tmp/
+wechat-output/
+
 # macOS-specific files
 .DS_Store
 
