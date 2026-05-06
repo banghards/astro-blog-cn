@@ -23,10 +23,12 @@ pnpm-debug.log*
 .vercel/
 
 # local generated content/output
+.tmp/
 outputs/
 social-output/
 tmp/
 wechat-output/
+src/content/blog/.obsidian/
 
 # macOS-specific files
 .DS_Store
