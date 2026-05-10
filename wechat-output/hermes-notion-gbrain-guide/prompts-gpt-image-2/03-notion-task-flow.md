@@ -1,0 +1,1 @@
+Pixel art process diagram, 16:9. Natural language messages from Slack and WhatsApp enter a Hermes terminal, then flow into a Python script window, then into a Notion task database showing create, update, done, delete actions. Strong sense of control and reliability, retro UI details, clean grid, no brand logos, limited readable labels like "create", "update", "done".

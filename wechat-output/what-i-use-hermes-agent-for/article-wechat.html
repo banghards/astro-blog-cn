@@ -1,0 +1,200 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>我把 Hermes Agent 真正用起来之后，最有价值的不是“写代码”</title>
+  <meta name="author" content="Codex">
+  <meta name="description" content="很多人装了 Agent 工具，却不知道该拿它做什么。与其从模型、显卡和参数开始，不如先从你每天的工作、生活和摩擦点开始。">
+</head>
+<body style="padding: 24px; background: #ffffff; max-width: 860px; margin: 0 auto; text-align: left; font-family: -apple-system-font,BlinkMacSystemFont, Helvetica Neue, PingFang SC, Hiragino Sans GB , Microsoft YaHei UI , Microsoft YaHei ,Arial,sans-serif; font-size: 15px; line-height: 2;">
+  <div id="output">
+    <section class="container" style="text-align: left; font-family: -apple-system-font,BlinkMacSystemFont, Helvetica Neue, PingFang SC, Hiragino Sans GB , Microsoft YaHei UI , Microsoft YaHei ,Arial,sans-serif; font-size: 15px; line-height: 2; letter-spacing: 0px; font-weight: 400; background-color: rgba(250, 249, 245, 1); border: 1px solid rgba(255, 255, 255, 0.01); border-radius: 25px; padding: 12px 12px;">
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all; margin-top: 0 !important;">很多人第一次装上一个 AI Agent，都会经历同一个阶段：</p>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">兴奋地打开。</p>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">看一圈界面。</p>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">脑子里冒出一句话：</p>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;"><strong style="color: #A93226; font-weight: bold; font-size: inherit;">“所以……我到底该拿它做什么？”</strong></p>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">我对 <code>Hermes Agent</code> 的感觉，最开始也是这样。</p>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">那段时间，时间线上全是多智能体、<code>Mac Mini</code>、各种本地部署和新工具的讨论。看得人很热闹，但真轮到自己上手时，反而容易卡住：</p>
+      <ul class="ul" style="list-style: circle; padding-left: 1em; margin-left: 0; color: #3f3f3f; line-height: 2;">
+        <li class="listitem" style="display: block; margin: 0.2em 8px; color: #3f3f3f;">• 不是不会装</li>
+        <li class="listitem" style="display: block; margin: 0.2em 8px; color: #3f3f3f;">• 不是不会配</li>
+        <li class="listitem" style="display: block; margin: 0.2em 8px; color: #3f3f3f;">• 而是不知道“它到底该替我做哪类事”</li>
+      </ul>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">这个问题如果想不清楚，Agent 很容易沦为一个看起来很强、实际上很少打开的工具。</p>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">所以这篇文章，我不想讨论哪家模型最强，也不想讨论要不要先买硬件。</p>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">我更想讲另一件更关键的事：</p>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;"><strong style="color: #A93226; font-weight: bold; font-size: inherit;">普通人到底该怎么找到，属于自己的 Agent 用法。</strong></p>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;"><img src="./illustrations/01-cover-wide.svg" style="display: block; width: 100%; margin: 1.5em auto;"></p>
+
+      <h2 class="h2" data-heading="true" style="display: block; padding: 0.2em 0; padding-bottom: 0; margin: 0 auto 20px; width: 100%; color: #A93226; font-size: 20px; font-weight: bold; letter-spacing: 0.578px; line-height: 1.7; border-bottom: 2px solid #E4B1A0; text-align: left;">真正的起点，不是技术，而是你每天在重复什么</h2>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">很多人一上来就会先问：</p>
+      <ul class="ul" style="list-style: circle; padding-left: 1em; margin-left: 0; color: #3f3f3f; line-height: 2;">
+        <li class="listitem" style="display: block; margin: 0.2em 8px; color: #3f3f3f;">• 我要跑哪个模型</li>
+        <li class="listitem" style="display: block; margin: 0.2em 8px; color: #3f3f3f;">• 用本地还是 API</li>
+        <li class="listitem" style="display: block; margin: 0.2em 8px; color: #3f3f3f;">• 要不要上多 Agent</li>
+        <li class="listitem" style="display: block; margin: 0.2em 8px; color: #3f3f3f;">• 要不要配 <code>Telegram</code>、<code>TUI</code>、自动化链路</li>
+      </ul>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">这些问题当然都重要。</p>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">但如果你还没想清楚“它应该帮你做什么”，那这些都只是更复杂的前置准备。</p>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">对我来说，真正开始把 Hermes 用起来，是从一个很简单的方法开始的：</p>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;"><strong style="color: #A93226; font-weight: bold; font-size: inherit;">把自己一天做的事写下来。</strong></p>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">不是写理想中的工作流，而是写真实发生的事。</p>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">比如：</p>
+      <ul class="ul" style="list-style: circle; padding-left: 1em; margin-left: 0; color: #3f3f3f; line-height: 2;">
+        <li class="listitem" style="display: block; margin: 0.2em 8px; color: #3f3f3f;">• 哪些事情很耗时间</li>
+        <li class="listitem" style="display: block; margin: 0.2em 8px; color: #3f3f3f;">• 哪些事情你必须做，但并不产生太高价值</li>
+        <li class="listitem" style="display: block; margin: 0.2em 8px; color: #3f3f3f;">• 哪些事情你已经做过很多次，流程很熟</li>
+        <li class="listitem" style="display: block; margin: 0.2em 8px; color: #3f3f3f;">• 哪些事情你总在重复确认、重复整理、重复推进</li>
+      </ul>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">写完一天还不够，最好持续记几天，甚至一周。</p>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">因为很多真正值得交给 Agent 的事情，不一定是“最难的事”，而往往是：</p>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;"><strong style="color: #A93226; font-weight: bold; font-size: inherit;">那些不难，但反复出现，还会不断打断你的事。</strong></p>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;"><img src="./illustrations/02-workflow-audit.svg" style="display: block; width: 100%; margin: 1.5em auto;"></p>
+
+      <h2 class="h2" data-heading="true" style="display: block; padding: 0.2em 0; padding-bottom: 0; margin: 0 auto 20px; width: 100%; color: #A93226; font-size: 20px; font-weight: bold; letter-spacing: 0.578px; line-height: 1.7; border-bottom: 2px solid #E4B1A0; text-align: left;">另一个更容易被忽略的入口：生活里的摩擦点</h2>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">还有一类很适合 Agent 的事，很多技术用户反而最容易忽略。</p>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">不是工作，不是写代码，而是生活里的那些“软问题”。</p>
+      <ul class="ul" style="list-style: circle; padding-left: 1em; margin-left: 0; color: #3f3f3f; line-height: 2;">
+        <li class="listitem" style="display: block; margin: 0.2em 8px; color: #3f3f3f;">• 总忘记喝水</li>
+        <li class="listitem" style="display: block; margin: 0.2em 8px; color: #3f3f3f;">• 总忘记起身活动</li>
+        <li class="listitem" style="display: block; margin: 0.2em 8px; color: #3f3f3f;">• 坐久了姿势越来越差</li>
+        <li class="listitem" style="display: block; margin: 0.2em 8px; color: #3f3f3f;">• 每天都要为一些重复的小决定消耗精力</li>
+        <li class="listitem" style="display: block; margin: 0.2em 8px; color: #3f3f3f;">• 明明不是难事，但总会拖着不做</li>
+      </ul>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">这些问题不酷，也不适合发炫技截图，但它们很真实。</p>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">而且它们往往比“Agent 帮我完成一个复杂任务”更容易立刻带来改变。</p>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">所以如果你不知道该从哪里开始，不妨先问自己两个问题：</p>
+      <ol style="padding-left: 1.2em; color: #3f3f3f; line-height: 2;">
+        <li>我每天最重复的动作是什么？</li>
+        <li>我生活里最稳定出现的摩擦点是什么？</li>
+      </ol>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">很多适合 Agent 的场景，就藏在这两个问题里。</p>
+
+      <h2 class="h2" data-heading="true" style="display: block; padding: 0.2em 0; padding-bottom: 0; margin: 0 auto 20px; width: 100%; color: #A93226; font-size: 20px; font-weight: bold; letter-spacing: 0.578px; line-height: 1.7; border-bottom: 2px solid #E4B1A0; text-align: left;">我现在怎么用 Hermes Agent：4 个最常用的方向</h2>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">真正把思路打开之后，Agent 的用途其实会慢慢清晰起来。</p>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">我现在给自己配了一组不同角色的 Agent。重点不在“数量”，而在于它们各自解决的是不同类型的问题。</p>
+
+      <h2 class="h2" data-heading="true" style="display: block; padding: 0.2em 0; padding-bottom: 0; margin: 0 auto 20px; width: 100%; color: #A93226; font-size: 20px; font-weight: bold; letter-spacing: 0.578px; line-height: 1.7; border-bottom: 2px solid #E4B1A0; text-align: left;">1. 技术研究 Agent：帮我先把信息跑一遍</h2>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">这一类 Agent，我最常拿来做研究型任务。</p>
+      <ul class="ul" style="list-style: circle; padding-left: 1em; margin-left: 0; color: #3f3f3f; line-height: 2;">
+        <li class="listitem" style="display: block; margin: 0.2em 8px; color: #3f3f3f;">• 一个技术方向的 research brief</li>
+        <li class="listitem" style="display: block; margin: 0.2em 8px; color: #3f3f3f;">• 带引用的资料整理</li>
+        <li class="listitem" style="display: block; margin: 0.2em 8px; color: #3f3f3f;">• 某个概念的学习路径</li>
+        <li class="listitem" style="display: block; margin: 0.2em 8px; color: #3f3f3f;">• 某个问题相关的论文、原始材料和背景梳理</li>
+      </ul>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">这里我最看重的一点是：<strong style="color: #A93226; font-weight: bold; font-size: inherit;">一定要有引用。</strong></p>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">因为我不是想让 Agent 替我形成结论，而是让它先帮我完成资料收集、方向定位和初步整理。</p>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">比如学模型量化这类事，我不需要它替我做完整个过程，但我很愿意让它先把相关论文、资料和主流方法帮我串起来，再自己去验证和动手。</p>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">也就是说，这类 Agent 更像：<strong style="color: #A93226; font-weight: bold; font-size: inherit;">研究助理，而不是替身。</strong></p>
+
+      <h2 class="h2" data-heading="true" style="display: block; padding: 0.2em 0; padding-bottom: 0; margin: 0 auto 20px; width: 100%; color: #A93226; font-size: 20px; font-weight: bold; letter-spacing: 0.578px; line-height: 1.7; border-bottom: 2px solid #E4B1A0; text-align: left;">2. 技术执行 Agent：把“知道怎么做”变成“有人先帮你做掉一部分”</h2>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">如果说研究 Agent 负责帮我看方向，那执行 Agent 就负责真正推进任务。</p>
+      <ul class="ul" style="list-style: circle; padding-left: 1em; margin-left: 0; color: #3f3f3f; line-height: 2;">
+        <li class="listitem" style="display: block; margin: 0.2em 8px; color: #3f3f3f;">• 写或改 Hermes 的 skill</li>
+        <li class="listitem" style="display: block; margin: 0.2em 8px; color: #3f3f3f;">• 调整 <code>TUI</code></li>
+        <li class="listitem" style="display: block; margin: 0.2em 8px; color: #3f3f3f;">• 做一些具体的工程性任务</li>
+        <li class="listitem" style="display: block; margin: 0.2em 8px; color: #3f3f3f;">• 帮我把一个已经知道目标的任务先跑起来</li>
+      </ul>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">这类 Agent 的价值，不在于它比你更懂，而在于它可以先把很多体力活、整理活、搭骨架的活干掉，让你直接进入判断和修正阶段。</p>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">我现在基本把技术类 Agent 分成两种：一个偏研究，一个偏执行。这样分开之后，反而比“所有事都丢给同一个 Agent”更清楚。</p>
+
+      <h2 class="h2" data-heading="true" style="display: block; padding: 0.2em 0; padding-bottom: 0; margin: 0 auto 20px; width: 100%; color: #A93226; font-size: 20px; font-weight: bold; letter-spacing: 0.578px; line-height: 1.7; border-bottom: 2px solid #E4B1A0; text-align: left;">3. 生活提醒 Agent：最不性感，但最立刻见效</h2>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">这个可能最容易被人吐槽。</p>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">我有一个 Agent，会定时提醒我喝水。是的，听起来很荒谬。但坦白说，非常有用。</p>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">而且很可能还会继续扩展，比如提醒我：</p>
+      <ul class="ul" style="list-style: circle; padding-left: 1em; margin-left: 0; color: #3f3f3f; line-height: 2;">
+        <li class="listitem" style="display: block; margin: 0.2em 8px; color: #3f3f3f;">• 检查坐姿</li>
+        <li class="listitem" style="display: block; margin: 0.2em 8px; color: #3f3f3f;">• 起来活动</li>
+        <li class="listitem" style="display: block; margin: 0.2em 8px; color: #3f3f3f;">• 别连续坐太久</li>
+        <li class="listitem" style="display: block; margin: 0.2em 8px; color: #3f3f3f;">• 做一些最基础但总会忘的身体管理</li>
+      </ul>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">这类 Agent 的有趣之处在于：它不需要很聪明，也不需要很强的推理。它只要稳定、低成本、够顺手，就已经很有价值。</p>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">这也是很多人一开始低估 Agent 的地方：<strong style="color: #A93226; font-weight: bold; font-size: inherit;">不是所有高价值场景都需要“最强模型”。</strong></p>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">有些场景，便宜、稳定、够用，反而就是最优解。</p>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;"><img src="./illustrations/03-lifestyle-agent.svg" style="display: block; width: 100%; margin: 1.5em auto;"></p>
+
+      <h2 class="h2" data-heading="true" style="display: block; padding: 0.2em 0; padding-bottom: 0; margin: 0 auto 20px; width: 100%; color: #A93226; font-size: 20px; font-weight: bold; letter-spacing: 0.578px; line-height: 1.7; border-bottom: 2px solid #E4B1A0; text-align: left;">4. 生活 / 研究混合 Agent：处理长期问题，比处理单次任务更有价值</h2>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">还有一类我自己很重视的 Agent，是围绕长期生活问题展开的。</p>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">比如健康相关的研究、饮食相关的信息整理，或者每天做饭时的低负荷辅助。</p>
+      <ul class="ul" style="list-style: circle; padding-left: 1em; margin-left: 0; color: #3f3f3f; line-height: 2;">
+        <li class="listitem" style="display: block; margin: 0.2em 8px; color: #3f3f3f;">• 今天吃什么</li>
+        <li class="listitem" style="display: block; margin: 0.2em 8px; color: #3f3f3f;">• 手头这些食材能做什么</li>
+        <li class="listitem" style="display: block; margin: 0.2em 8px; color: #3f3f3f;">• 某类健康议题最近有没有新研究</li>
+        <li class="listitem" style="display: block; margin: 0.2em 8px; color: #3f3f3f;">• 某个长期问题有哪些值得跟进的信息</li>
+      </ul>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">这类 Agent 的价值，不在于“惊艳”，而在于它真的能融进日常。</p>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">很多时候，你不需要它替你做重大决策。你只需要它让日常决策少一点摩擦。而这恰恰是 Agent 最容易被做出真实价值的地方。</p>
+
+      <h2 class="h2" data-heading="true" style="display: block; padding: 0.2em 0; padding-bottom: 0; margin: 0 auto 20px; width: 100%; color: #A93226; font-size: 20px; font-weight: bold; letter-spacing: 0.578px; line-height: 1.7; border-bottom: 2px solid #E4B1A0; text-align: left;">一个很重要的原则：只自动化你本来就懂的事</h2>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">我自己有一个很明确的使用原则：</p>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;"><strong style="color: #A93226; font-weight: bold; font-size: inherit;">AI 是助理，不是替代思考的人。</strong></p>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">我不会把判断直接交给它。我更愿意把它当成：</p>
+      <ul class="ul" style="list-style: circle; padding-left: 1em; margin-left: 0; color: #3f3f3f; line-height: 2;">
+        <li class="listitem" style="display: block; margin: 0.2em 8px; color: #3f3f3f;">• 帮我先探路</li>
+        <li class="listitem" style="display: block; margin: 0.2em 8px; color: #3f3f3f;">• 帮我先整理</li>
+        <li class="listitem" style="display: block; margin: 0.2em 8px; color: #3f3f3f;">• 帮我先跑体力活</li>
+        <li class="listitem" style="display: block; margin: 0.2em 8px; color: #3f3f3f;">• 帮我把重复劳动压缩掉</li>
+      </ul>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">然后我自己再验证，再推进。</p>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">对于自动化任务，我尤其倾向于只让 AI 自动执行那些：<strong style="color: #A93226; font-weight: bold; font-size: inherit;">我本来就知道怎么做、也知道怎么检查结果的事。</strong></p>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">这条边界非常重要。因为一旦超出这个边界，Agent 就容易从“省力工具”变成“风险放大器”。</p>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;"><img src="./illustrations/04-boundary-and-control.svg" style="display: block; width: 100%; margin: 1.5em auto;"></p>
+
+      <h2 class="h2" data-heading="true" style="display: block; padding: 0.2em 0; padding-bottom: 0; margin: 0 auto 20px; width: 100%; color: #A93226; font-size: 20px; font-weight: bold; letter-spacing: 0.578px; line-height: 1.7; border-bottom: 2px solid #E4B1A0; text-align: left;">模型和成本怎么选？先别追求完美，先追求可持续</h2>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">很多人一想到 Agent，就会直接联想到高额 API 账单。这也是我自己一直很警惕的事。</p>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">我非常不想把个人 Agent 系统做成一个“每天几十上百美元”才能跑起来的玩具，所以我一直在做一件事：<strong style="color: #A93226; font-weight: bold; font-size: inherit;">尽量便宜地把它跑起来。</strong></p>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">这里面的关键，不是找到一个万能模型，而是学会把不同任务分配给不同成本结构的模型。</p>
+      <ul class="ul" style="list-style: circle; padding-left: 1em; margin-left: 0; color: #3f3f3f; line-height: 2;">
+        <li class="listitem" style="display: block; margin: 0.2em 8px; color: #3f3f3f;">• 低风险、提醒类任务，用便宜甚至免费的模型</li>
+        <li class="listitem" style="display: block; margin: 0.2em 8px; color: #3f3f3f;">• 研究类任务，优先选择引用能力和稳定性更好的模型</li>
+        <li class="listitem" style="display: block; margin: 0.2em 8px; color: #3f3f3f;">• 执行类任务，用你最信得过、最省心的那一个</li>
+        <li class="listitem" style="display: block; margin: 0.2em 8px; color: #3f3f3f;">• 能本地跑的，尽量尝试本地跑</li>
+      </ul>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">这背后的思路其实很简单：<strong style="color: #A93226; font-weight: bold; font-size: inherit;">不是所有任务都配得上最高成本。</strong></p>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">很多人用不好 Agent，不是因为不会配，而是因为默认“所有任务都该交给最强模型”。这往往既贵，也没必要。</p>
+
+      <h2 class="h2" data-heading="true" style="display: block; padding: 0.2em 0; padding-bottom: 0; margin: 0 auto 20px; width: 100%; color: #A93226; font-size: 20px; font-weight: bold; letter-spacing: 0.578px; line-height: 1.7; border-bottom: 2px solid #E4B1A0; text-align: left;">如果你刚开始，不要先从“完美配置”开始</h2>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">如果你现在也正处在“我装了 Agent，但不知道拿它干嘛”的阶段，我反而建议你别先研究这些：</p>
+      <ul class="ul" style="list-style: circle; padding-left: 1em; margin-left: 0; color: #3f3f3f; line-height: 2;">
+        <li class="listitem" style="display: block; margin: 0.2em 8px; color: #3f3f3f;">• 最佳模型组合</li>
+        <li class="listitem" style="display: block; margin: 0.2em 8px; color: #3f3f3f;">• 最复杂的多 Agent 编排</li>
+        <li class="listitem" style="display: block; margin: 0.2em 8px; color: #3f3f3f;">• 最极致的本地推理性能</li>
+        <li class="listitem" style="display: block; margin: 0.2em 8px; color: #3f3f3f;">• 最炫的自动化链路</li>
+      </ul>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">你先做三件事就够了：</p>
+      <ol style="padding-left: 1.2em; color: #3f3f3f; line-height: 2;">
+        <li>记下你这几天实际在重复做什么</li>
+        <li>找出你生活和工作里的高频摩擦点</li>
+        <li>从一个最具体、最小的场景开始试</li>
+      </ol>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">比如：</p>
+      <ul class="ul" style="list-style: circle; padding-left: 1em; margin-left: 0; color: #3f3f3f; line-height: 2;">
+        <li class="listitem" style="display: block; margin: 0.2em 8px; color: #3f3f3f;">• 帮我整理研究资料</li>
+        <li class="listitem" style="display: block; margin: 0.2em 8px; color: #3f3f3f;">• 帮我生成一个技术学习 brief</li>
+        <li class="listitem" style="display: block; margin: 0.2em 8px; color: #3f3f3f;">• 每天下午提醒我喝水和起来活动</li>
+        <li class="listitem" style="display: block; margin: 0.2em 8px; color: #3f3f3f;">• 帮我从一组食材里给出几种简单晚餐方案</li>
+        <li class="listitem" style="display: block; margin: 0.2em 8px; color: #3f3f3f;">• 帮我把一个重复性的执行流程整理成 skill</li>
+      </ul>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">先把一个场景跑通。你一旦跑通一次，后面的很多用法会自己长出来。</p>
+
+      <h2 class="h2" data-heading="true" style="display: block; padding: 0.2em 0; padding-bottom: 0; margin: 0 auto 20px; width: 100%; color: #A93226; font-size: 20px; font-weight: bold; letter-spacing: 0.578px; line-height: 1.7; border-bottom: 2px solid #E4B1A0; text-align: left;">最后想说的</h2>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">我现在越来越觉得，很多人使用 Agent 最大的误区，不是技术不够强，而是起点放错了。</p>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">他们从硬件开始，从模型榜单开始，从别人怎么配开始。</p>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">但真正让 Agent 变得有用的，通常不是这些。</p>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">而是你愿不愿意回头看一眼自己的真实生活和真实工作：</p>
+      <ul class="ul" style="list-style: circle; padding-left: 1em; margin-left: 0; color: #3f3f3f; line-height: 2;">
+        <li class="listitem" style="display: block; margin: 0.2em 8px; color: #3f3f3f;">• 你每天到底在重复什么</li>
+        <li class="listitem" style="display: block; margin: 0.2em 8px; color: #3f3f3f;">• 你真正卡住的是哪类摩擦</li>
+        <li class="listitem" style="display: block; margin: 0.2em 8px; color: #3f3f3f;">• 哪些事不值得你亲自反复做</li>
+        <li class="listitem" style="display: block; margin: 0.2em 8px; color: #3f3f3f;">• 哪些流程其实已经熟到可以放心交给一个助理先跑一遍</li>
+      </ul>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">Agent 真正有价值的时刻，不是它看起来多像未来。</p>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">而是它第一次让你觉得：</p>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;"><strong style="color: #A93226; font-weight: bold; font-size: inherit;">“这件事以后终于不用每次都自己从头来一遍了。”</strong></p>
+      <p class="p" style="margin: 20px 0; color: #3f3f3f; line-height: 2; font-size: 15px; font-weight: 400; word-break: break-all;">这才是它开始真正有用的时候。</p>
+    </section>
+  </div>
+</body>
+</html>

@@ -1,0 +1,1 @@
+像素风信息图，16:9。展示 Markdown 作为生产端的优势：轻、快、可 diff、低 token、规则清晰、适合 AI 阅读。画面里有 CLAUDE.md、AGENTS.md、知识结构、书稿章节、代码 diff 等元素，但除 Markdown、CLAUDE.md、AGENTS.md 这些必要专有名词外，其余全部使用中文标签，如“生产端”“轻量”“好修改”“低成本”“给AI吃上下文”。高质量 16-bit 像素画，结构清晰，编辑部信息图风格。

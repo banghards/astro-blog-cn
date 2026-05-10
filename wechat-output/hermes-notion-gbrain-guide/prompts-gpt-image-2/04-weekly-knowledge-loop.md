@@ -1,0 +1,1 @@
+Pixel art workflow loop, 16:9. Weekly review pipeline: recent tasks collected from a task board, summarized by an AI node, then written into a glowing knowledge graph page called active context. Visual metaphor for continuous learning and project memory. High-detail 16-bit pixel art, magazine-quality composition, teal, cream and orange tones, minimal text, no logos.

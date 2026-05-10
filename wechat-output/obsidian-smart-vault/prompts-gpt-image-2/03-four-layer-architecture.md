@@ -1,0 +1,1 @@
+像素风四层架构图，16:9。自上而下展示四层：采集层、自动化管道层、Obsidian 存储层、Claude 智能层。采集层包括文章、高亮、播客、语音、Telegram Bot；管道层显示自动整理成 Markdown；存储层是 Obsidian 知识库；智能层是 Claude 在做连接、总结、提问。全部中文标签优先，仅保留 Obsidian、Claude、Markdown、Telegram Bot 这些必要名称。高质量 16-bit 像素画，科技杂志架构图风格，清晰、克制、可读。
