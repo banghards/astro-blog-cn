@@ -18,6 +18,7 @@ pnpm-debug.log*
 .env
 .env.production
 .env.local
+.baoyu-skills/.env
 
 # local deployment metadata
 .vercel/
