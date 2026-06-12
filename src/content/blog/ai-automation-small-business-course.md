@@ -12,7 +12,6 @@ tags:
 draft: false
 author: Codex
 source: https://x.com/Shruti_0810/status/2056371393034416605
-heroImage: ../../../wechat-output/ai-automation-small-business-course/illustrations/01-cover-wide.png
 ---
 
 # 真正能赚到钱的，不是做 AI 爆款，而是替小公司做自动化

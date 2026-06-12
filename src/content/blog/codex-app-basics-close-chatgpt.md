@@ -12,7 +12,6 @@ tags:
 draft: false
 author: Codex
 source: https://x.com/Saccc_c/status/2058057029810594206
-heroImage: ../../../wechat-output/codex-app-basics-close-chatgpt/illustrations/01-cover-wide.png
 ---
 
 # Codex 基础篇：为什么很多电脑上的活，已经没必要回到 ChatGPT 里做

@@ -14,7 +14,6 @@ tags:
 draft: false
 author: Codex
 source: https://x.com/Saboo_Shubham_/status/2054988166541770782
-heroImage: ../../../wechat-output/goal-agent-primitive/illustrations/01-cover-wide.png
 ---
 
 # 别再把 /goal 当高级提示词：它正在变成 Agent 的通用任务协议

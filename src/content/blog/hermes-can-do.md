@@ -9,7 +9,6 @@ tags:
   - Agent
   - 自动化
 draft: false
-heroImage: ../../../wechat-output/hermes-can-do/illustrations/01-cover-wide.png
 ---
 
 # Hermes能干什么
