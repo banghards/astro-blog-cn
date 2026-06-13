@@ -1,0 +1,1 @@
+像素风宽幅封面插画，2.25:1 比例。主题是“Hermes Agent Power Stack”：左侧是单独的基础 Hermes Agent，右侧是接入 9 个 GitHub 仓库后的完整生态栈，包含核心 Agent、技能库、Workspace、SkillClaw、生态索引、Docker 部署。中文标签优先，可出现“基础 Agent”“完整操作栈”“技能库”“工作台”“生态地图”“生产部署”，仅保留必要专有名词 Hermes Agent、GitHub、Docker、SkillClaw。16-bit 高质量像素画，科技公众号封面风格，深蓝、青绿、暖橙配色。

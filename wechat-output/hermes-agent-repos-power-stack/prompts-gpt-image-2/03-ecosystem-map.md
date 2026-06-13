@@ -1,0 +1,1 @@
+像素风信息图，16:9。展示 Hermes 生态索引地图：awesome-hermes-skills、awesome-hermes-agent、hermes-ecosystem、部署迁移清单，把技能、工具、集成、多 Agent、部署、安全分成多个区域。中文标签为主，可写“生态索引”“技能发现”“部署迁移”“多 Agent”“少走弯路”。仅保留必要专有名词 Hermes、awesome、Agent。高质量 16-bit 像素画，适合中文公众号。

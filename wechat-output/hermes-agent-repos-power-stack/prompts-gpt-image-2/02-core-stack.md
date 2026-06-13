@@ -1,0 +1,1 @@
+像素风信息图，16:9。展示 Hermes 核心能力栈：NousResearch/hermes-agent 作为核心，wondelai/skills 提供技能库，hermes-workspace 提供操作面板，SkillClaw 负责技能进化。中文标签为主，可写“核心 Agent”“预构建技能”“操作面板”“技能进化”“真正开始干活”。仅保留必要专有名词 Hermes、skills、workspace、SkillClaw。高质量 16-bit 像素画，结构清楚。
