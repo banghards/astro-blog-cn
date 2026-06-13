@@ -1,0 +1,1 @@
+像素风信息图，16:9。展示 Hermes Agent 与 Codex/Claude Code 的分工关系：Hermes 负责研究、文档、运营、任务跟进和日常管理，Codex/Claude Code 负责深度编码、复杂测试、工程推进。中文标签为主，可写“分工关系”“日常任务”“研究文档”“深度编码”“复杂测试”“不要混着用”。仅保留必要专有名词 Hermes、Codex、Claude Code。16-bit 高质量像素画，清晰对照，但不是对立冲突。

@@ -1,0 +1,1 @@
+像素风宽幅封面插画，2.25:1 比例。主题是“小米 MiMo Code 长程 Agent 架构”。中心是终端里的 MiMo Code 机器人，周围环绕持久记忆、checkpoint、子智能体、Compose 编排、dream/distill 自我沉淀。中文标签优先，可出现“长程记忆”“不失忆”“子智能体”“工程交付”“自我沉淀”等，仅保留必要专有名词 MiMo Code、Claude Code、Agent、AI。16-bit 高质量像素画，科技公众号封面风格，深蓝、青绿、暖橙配色，清晰有张力。

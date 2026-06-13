@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1500" viewBox="0 0 1200 1500">
+  <rect width="1200" height="1500" fill="#F7F2E9"/>
+  <text x="80" y="100" font-size="60" font-family="Georgia, 'Times New Roman', serif" font-weight="700" fill="#111111">现代 AI 应用的 7 层能力栈</text>
+  <text x="80" y="145" font-size="24" font-family="'Microsoft YaHei', sans-serif" fill="#555555">从编码 Agent 到人类监督，层层抬高系统价值</text>
+  <g transform="translate(80 220)">
+    <g>
+      <rect x="0" y="980" width="740" height="150" rx="18" fill="#E9DED0" stroke="#111111" stroke-width="3"/>
+      <text x="28" y="1040" font-size="38" font-family="'Microsoft YaHei', sans-serif" font-weight="700">第 1 层：编码 Agent</text>
+      <text x="28" y="1090" font-size="24" font-family="'Microsoft YaHei', sans-serif">Claude Code、Codex 等，负责真正动手执行。</text>
+    </g>
+    <g>
+      <rect x="22" y="830" width="696" height="130" rx="18" fill="#F0E6DA" stroke="#111111" stroke-width="3"/>
+      <text x="48" y="885" font-size="36" font-family="'Microsoft YaHei', sans-serif" font-weight="700">第 2 层：框架和运行时</text>
+      <text x="48" y="928" font-size="23" font-family="'Microsoft YaHei', sans-serif">上下文、记忆、定时任务、子 Agent、多通道通信。</text>
+    </g>
+    <g>
+      <rect x="46" y="690" width="648" height="118" rx="18" fill="#F4EAE0" stroke="#111111" stroke-width="3"/>
+      <text x="68" y="740" font-size="34" font-family="'Microsoft YaHei', sans-serif" font-weight="700">第 3 层：Agent 编排器</text>
+      <text x="68" y="780" font-size="22" font-family="'Microsoft YaHei', sans-serif">多 Agent 并行，worktree / 沙箱隔离，减少互相干扰。</text>
+    </g>
+    <g>
+      <rect x="72" y="560" width="596" height="108" rx="18" fill="#F8EEE5" stroke="#111111" stroke-width="3"/>
+      <text x="92" y="606" font-size="32" font-family="'Microsoft YaHei', sans-serif" font-weight="700">第 4 层：任务运行器</text>
+      <text x="92" y="643" font-size="21" font-family="'Microsoft YaHei', sans-serif">接入 Issue、分配任务、回收结果、交给人审查。</text>
+    </g>
+    <g>
+      <rect x="98" y="438" width="544" height="102" rx="18" fill="#FCF2E9" stroke="#111111" stroke-width="3"/>
+      <text x="118" y="481" font-size="30" font-family="'Microsoft YaHei', sans-serif" font-weight="700">第 5 层：全生命周期平台</text>
+      <text x="118" y="516" font-size="20" font-family="'Microsoft YaHei', sans-serif">从需求到交付的端到端管理。</text>
+    </g>
+    <g>
+      <rect x="124" y="320" width="492" height="96" rx="18" fill="#FFF6EE" stroke="#111111" stroke-width="3"/>
+      <text x="144" y="360" font-size="28" font-family="'Microsoft YaHei', sans-serif" font-weight="700">第 6 层：规格工具</text>
+      <text x="144" y="392" font-size="19" font-family="'Microsoft YaHei', sans-serif">把模糊需求变成结构化规格和任务 DAG。</text>
+    </g>
+    <g>
+      <rect x="150" y="210" width="440" height="88" rx="18" fill="#FFFFFF" stroke="#111111" stroke-width="3"/>
+      <text x="170" y="246" font-size="28" font-family="'Microsoft YaHei', sans-serif" font-weight="700">第 7 层：人类监督</text>
+      <text x="170" y="276" font-size="18" font-family="'Microsoft YaHei', sans-serif">审批、Review、优先级、结果把关。</text>
+    </g>
+  </g>
+  <line x1="1040" y1="1270" x2="1040" y2="380" stroke="#111111" stroke-width="5"/>
+  <polygon points="1040,320 1026,352 1054,352" fill="#111111"/>
+  <text x="1075" y="1240" font-size="34" font-family="'Microsoft YaHei', sans-serif" fill="#111111">价值递增</text>
+  <text x="1075" y="1280" font-size="20" font-family="'Microsoft YaHei', sans-serif" fill="#666666">越往上，越接近</text>
+  <text x="1075" y="1310" font-size="20" font-family="'Microsoft YaHei', sans-serif" fill="#666666">真实交付与治理</text>
+</svg>

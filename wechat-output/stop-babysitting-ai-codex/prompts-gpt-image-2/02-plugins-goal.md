@@ -1,0 +1,1 @@
+像素风信息图，16:9。展示 Codex 接上 Gmail、Google Drive、GitHub 等插件，并从“你一步步指挥”切换到“你给目标，它自己推进”。中文标签为主，可写“插件接入”“自己找资料”“先筛邮件”“Goal Mode”“给目标，不给碎指令”。仅保留必要专有名词 Codex、Gmail、Google Drive、GitHub、Goal Mode。高质量 16-bit 像素画，编辑部信息图风格，结构清楚。

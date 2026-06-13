@@ -1,0 +1,1 @@
+像素风信息图，16:9。展示 Hermes Skill Registry：多个 Agent 通过技能共享中心发布、发现、安装技能，一个 Agent 学到的技能被其他 Agent 复用。中文标签为主，可写“技能共享中心”“发布技能”“发现技能”“安装技能”“经验复用”。仅保留必要专有名词 Hermes、Skill Registry、Agent。高质量 16-bit 像素画，结构清楚，编辑部信息图风格。

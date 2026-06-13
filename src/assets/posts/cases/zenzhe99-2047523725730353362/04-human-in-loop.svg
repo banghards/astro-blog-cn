@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#F7F2E9"/>
+  <text x="90" y="110" font-size="62" font-family="Georgia, 'Times New Roman', serif" font-weight="700" fill="#111111">Human-in-the-loop：真正能落地的闭环</text>
+  <g transform="translate(90 230)" font-family="'Microsoft YaHei', sans-serif">
+    <g>
+      <rect x="0" y="140" width="180" height="120" rx="22" fill="#FFF9F1" stroke="#111111" stroke-width="3"/>
+      <text x="48" y="212" font-size="40" font-weight="700">需求</text>
+    </g>
+    <g>
+      <rect x="240" y="140" width="180" height="120" rx="22" fill="#FFF9F1" stroke="#111111" stroke-width="3"/>
+      <text x="288" y="212" font-size="40" font-weight="700">规格</text>
+    </g>
+    <g>
+      <rect x="480" y="140" width="180" height="120" rx="22" fill="#FFF9F1" stroke="#111111" stroke-width="3"/>
+      <text x="528" y="212" font-size="40" font-weight="700">编排</text>
+    </g>
+    <g>
+      <rect x="720" y="140" width="180" height="120" rx="22" fill="#FFF9F1" stroke="#111111" stroke-width="3"/>
+      <text x="768" y="212" font-size="40" font-weight="700">执行</text>
+    </g>
+    <g>
+      <rect x="960" y="140" width="180" height="120" rx="22" fill="#FFF9F1" stroke="#111111" stroke-width="3"/>
+      <text x="1008" y="212" font-size="40" font-weight="700">审查</text>
+    </g>
+    <g>
+      <rect x="1200" y="140" width="180" height="120" rx="22" fill="#C74A2C" stroke="#111111" stroke-width="3"/>
+      <text x="1248" y="212" font-size="40" font-weight="700" fill="#FFF9F1">上线</text>
+    </g>
+    <g stroke="#111111" stroke-width="4" fill="none">
+      <line x1="180" y1="200" x2="240" y2="200"/>
+      <line x1="420" y1="200" x2="480" y2="200"/>
+      <line x1="660" y1="200" x2="720" y2="200"/>
+      <line x1="900" y1="200" x2="960" y2="200"/>
+      <line x1="1140" y1="200" x2="1200" y2="200"/>
+    </g>
+    <g fill="#111111">
+      <polygon points="240,200 224,192 224,208"/>
+      <polygon points="480,200 464,192 464,208"/>
+      <polygon points="720,200 704,192 704,208"/>
+      <polygon points="960,200 944,192 944,208"/>
+      <polygon points="1200,200 1184,192 1184,208"/>
+    </g>
+    <rect x="340" y="380" width="720" height="170" rx="28" fill="#FFF9F1" stroke="#111111" stroke-width="3"/>
+    <text x="386" y="446" font-size="38" font-weight="700" fill="#111111">AI 负责生成、拆解、执行</text>
+    <text x="386" y="500" font-size="28" fill="#333333">人类负责判断、审批、设边界、做最终兜底。</text>
+    <text x="386" y="544" font-size="28" fill="#333333">这不是替代关系，而是协作关系。</text>
+    <path d="M810 140 C810 88, 810 88, 810 40" stroke="#C74A2C" stroke-width="5" fill="none"/>
+    <circle cx="810" cy="20" r="20" fill="#C74A2C"/>
+    <text x="720" y="28" font-size="26" fill="#FFF9F1" font-weight="700">人类监督</text>
+  </g>
+</svg>

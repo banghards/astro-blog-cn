@@ -1,0 +1,1 @@
+像素风信息图，16:9。展示 MiMo Code 的持久记忆系统：MEMORY.md、checkpoint.md、notes.md、tasks/progress.md 四类文件分别承担项目事实、状态快照、临时草稿、任务进度。中文标签为主，可写“项目事实”“状态快照”“临时草稿”“任务进度”“干净简报继续干”。仅保留必要专有名词 MiMo Code、MEMORY.md、checkpoint.md、notes.md。高质量 16-bit 像素画，结构清晰。

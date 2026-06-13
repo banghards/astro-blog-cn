@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+  <rect width="1400" height="900" fill="#F7F1E8"/>
+  <text x="80" y="110" font-size="58" font-family="Georgia, 'Times New Roman', serif" font-weight="700" fill="#111111">聊天式使用 vs 系统式使用</text>
+  <g transform="translate(80 190)">
+    <rect x="0" y="0" width="520" height="560" rx="24" fill="#FFF9F1" stroke="#111111" stroke-width="3"/>
+    <text x="34" y="58" font-size="38" font-family="'Microsoft YaHei', sans-serif" font-weight="700" fill="#111111">聊天式</text>
+    <rect x="34" y="100" width="340" height="68" rx="16" fill="#EFE4D6"/>
+    <rect x="34" y="200" width="280" height="68" rx="16" fill="#EFE4D6"/>
+    <rect x="34" y="300" width="370" height="68" rx="16" fill="#EFE4D6"/>
+    <text x="34" y="440" font-size="28" font-family="'Microsoft YaHei', sans-serif" fill="#333333">一步一问</text>
+    <text x="34" y="484" font-size="28" font-family="'Microsoft YaHei', sans-serif" fill="#333333">人工频繁接力</text>
+    <text x="34" y="528" font-size="28" font-family="'Microsoft YaHei', sans-serif" fill="#333333">结果依赖临时发挥</text>
+  </g>
+  <g transform="translate(760 190)">
+    <rect x="0" y="0" width="560" height="560" rx="24" fill="#FFF9F1" stroke="#111111" stroke-width="3"/>
+    <text x="34" y="58" font-size="38" font-family="'Microsoft YaHei', sans-serif" font-weight="700" fill="#C26139">系统式</text>
+    <rect x="34" y="108" width="150" height="70" rx="16" fill="#111111"/>
+    <rect x="220" y="108" width="150" height="70" rx="16" fill="#C26139"/>
+    <rect x="406" y="108" width="120" height="70" rx="16" fill="#BDA58A"/>
+    <rect x="90" y="250" width="150" height="70" rx="16" fill="#EFE4D6"/>
+    <rect x="300" y="250" width="180" height="70" rx="16" fill="#EFE4D6"/>
+    <line x1="184" y1="143" x2="220" y2="143" stroke="#111111" stroke-width="4"/>
+    <line x1="370" y1="143" x2="406" y2="143" stroke="#111111" stroke-width="4"/>
+    <line x1="110" y1="180" x2="140" y2="250" stroke="#111111" stroke-width="4"/>
+    <line x1="430" y1="180" x2="390" y2="250" stroke="#111111" stroke-width="4"/>
+    <text x="34" y="430" font-size="28" font-family="'Microsoft YaHei', sans-serif" fill="#333333">给它一段流程，不是一条动作</text>
+    <text x="34" y="474" font-size="28" font-family="'Microsoft YaHei', sans-serif" fill="#333333">自动推进，最后交付结果</text>
+    <text x="34" y="518" font-size="28" font-family="'Microsoft YaHei', sans-serif" fill="#333333">更适合重复劳动和链式任务</text>
+  </g>
+</svg>

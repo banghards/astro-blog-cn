@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000">
+  <rect width="1400" height="1000" fill="#F7F1E8"/>
+  <text x="80" y="100" font-size="58" font-family="Georgia, 'Times New Roman', serif" font-weight="700" fill="#111111">40 个思路，拆成 5 类更容易用起来</text>
+  <g transform="translate(150 210)" font-family="'Microsoft YaHei', sans-serif">
+    <circle cx="550" cy="280" r="92" fill="#111111"/>
+    <text x="480" y="270" font-size="34" font-weight="700" fill="#FFF9F1">Claude</text>
+    <text x="478" y="314" font-size="34" font-weight="700" fill="#FFF9F1">Cowork</text>
+    <g>
+      <rect x="0" y="60" width="260" height="120" rx="22" fill="#FFF9F1" stroke="#111111" stroke-width="3"/>
+      <text x="28" y="108" font-size="30" font-weight="700">文件与工作台整理</text>
+      <text x="28" y="148" font-size="22" fill="#444">归档、重命名、扫描、汇报</text>
+      <line x1="260" y1="120" x2="458" y2="250" stroke="#111111" stroke-width="4"/>
+    </g>
+    <g>
+      <rect x="850" y="40" width="260" height="120" rx="22" fill="#FFF9F1" stroke="#111111" stroke-width="3"/>
+      <text x="878" y="88" font-size="30" font-weight="700">研究与资料汇总</text>
+      <text x="878" y="128" font-size="22" fill="#444">搜集、对比、提炼、简报</text>
+      <line x1="850" y1="100" x2="642" y2="244" stroke="#111111" stroke-width="4"/>
+    </g>
+    <g>
+      <rect x="0" y="430" width="260" height="120" rx="22" fill="#FFF9F1" stroke="#111111" stroke-width="3"/>
+      <text x="28" y="478" font-size="30" font-weight="700">内容生产与改写</text>
+      <text x="28" y="518" font-size="22" fill="#444">框架、初稿、改写、多平台</text>
+      <line x1="260" y1="490" x2="454" y2="316" stroke="#111111" stroke-width="4"/>
+    </g>
+    <g>
+      <rect x="850" y="410" width="260" height="120" rx="22" fill="#FFF9F1" stroke="#111111" stroke-width="3"/>
+      <text x="878" y="458" font-size="30" font-weight="700">运营与行政自动化</text>
+      <text x="878" y="498" font-size="22" fill="#444">回复、周报、SOP、资料包</text>
+      <line x1="850" y1="470" x2="646" y2="316" stroke="#111111" stroke-width="4"/>
+    </g>
+    <g>
+      <rect x="420" y="650" width="260" height="120" rx="22" fill="#C26139" stroke="#111111" stroke-width="3"/>
+      <text x="466" y="698" font-size="30" font-weight="700" fill="#FFF9F1">个人效率系统</text>
+      <text x="466" y="738" font-size="22" fill="#FFF9F1">持续上下文、模板、复盘</text>
+      <line x1="550" y1="650" x2="550" y2="372" stroke="#111111" stroke-width="4"/>
+    </g>
+  </g>
+</svg>
